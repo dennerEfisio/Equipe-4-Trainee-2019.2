@@ -1,0 +1,22 @@
+html, body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.navFont a{
+    font-size:24px;
+
+    animation-name:navbar-top;
+    animation-duration:1s;
+}
+
+
+@keyframes navbar-top{
+    0%{
+        opacity:0;
+        transform:translate(100px,0px);
+    }
+    100%{
+        opacity:1;
+        transform:translate(0px,0px);
+    }
+}
