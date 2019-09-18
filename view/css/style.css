@@ -13,7 +13,7 @@ html, body{
     position:relative;
     background-color: #86BBD8;
     padding:10px;
-    border-radius:30px;
+    border-radius:30%;
 
     text-align: center;
 }
@@ -38,7 +38,7 @@ html, body{
 @keyframes navbar-top{
     0%{
         opacity:0;
-        margin-left: 100px;
+        margin-left: 10%;
 
     }
     100%{
