@@ -2,21 +2,47 @@ html, body{
     font-family: 'Raleway', sans-serif;
 }
 
-.navFont a{
+.navFont{
     font-size:24px;
 
     animation-name:navbar-top;
-    animation-duration:1s;
+    animation-duration:1.5s;
 }
+
+.button{
+    position:relative;
+    background-color: #86BBD8;
+    padding:10px;
+    border-radius:30px;
+
+    text-align: center;
+}
+
+.button a{
+    text-decoration: none;
+    color:white;
+}
+
+.button:hover{
+    background-color:#F6AE2D;
+    
+}
+
+.button-login{
+    text-align: center;
+}
+
+
 
 
 @keyframes navbar-top{
     0%{
         opacity:0;
-        transform:translate(100px,0px);
+        margin-left: 100px;
+
     }
     100%{
         opacity:1;
-        transform:translate(0px,0px);
+        margin-left:0;
     }
 }
