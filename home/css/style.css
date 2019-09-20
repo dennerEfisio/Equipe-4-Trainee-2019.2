@@ -1,0 +1,90 @@
+html,
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.parallax1 {
+    background-image: url(../imgs/peca-teatro1.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding: 20%;
+    text-align: center;
+}
+
+.parallax1 h1 {
+    font-size: 72px;
+}
+
+.parallax1 p {
+    font-size: 24px;
+}
+
+.info {
+    width: 100%;
+    height: auto;
+}
+
+.parallax2 {
+    background-image: url(../imgs/peca-teatro2.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding: 20%;
+    text-align: center;
+}
+
+.parallax2 h1 {
+    font-size: 72px;
+}
+
+.parallax2 p {
+    font-size: 24px;
+}
+
+.parallax3 {
+    background-image: url(../imgs/peca-teatro3.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding: 20%;
+    text-align: center;
+}
+
+.parallax3 h1 {
+    font-size: 72px;
+}
+
+.parallax3 p {
+    font-size: 24px;
+}
+
+.card-info {
+    background-color: #86BBD8;
+}
+
+.btn-color {
+    background-color: #F26419;
+}
+
+.fotos {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+}
+
+.primeiraLinha {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.primeiraLinha img {
+    width: 20%;
+}
