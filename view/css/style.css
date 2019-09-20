@@ -9,29 +9,21 @@ body {
     animation-duration: 1.5s;
 }
 
-.button {
+.linkLogin {
     position: relative;
-    background-color: #1d434e;
     padding: 10px;
     border-radius: 30%;
     text-align: center;
 }
 
-.button a {
+.linkLogin a {
     text-decoration: none;
-    color: white;
-}
-
-.button:hover {
-    background-color: #F6AE2D;
-}
-
-.button-login {
+    color: black;
     text-align: center;
 }
 
 .navbar-color {
-    background-image: linear-gradient(to right, #1d434e, #1d434e, #86BBD8)
+    background-image: linear-gradient(to right, #1d434e, #1d434e, #86BBD8);
 }
 
 @keyframes navbar-top {
