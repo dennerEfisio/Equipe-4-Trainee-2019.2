@@ -23,12 +23,13 @@ body {
 }
 
 .info {
+    background-image: linear-gradient(#33658A, #86BBD8, #86BBD8, #33658A);
     width: 100%;
     height: auto;
 }
 
 .parallax2 {
-    background-image: url(../imgs/peca-teatro2.jpg);
+    background-image: url(../imgs/peca-teatro4.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,7 +48,7 @@ body {
 }
 
 .parallax3 {
-    background-image: url(../imgs/peca-teatro3.jpg);
+    background-image: url(../imgs/peca-teatro2.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -66,7 +67,7 @@ body {
 }
 
 .card-info {
-    background-color: #86BBD8;
+    background-image: linear-gradient( #86BBD8, #86BBD8, #86BBD8, #33658A);
 }
 
 .btn-color {
@@ -87,4 +88,15 @@ body {
 
 .primeiraLinha img {
     width: 20%;
+}
+
+.title-espetaculos {
+    background-image: linear-gradient( #33658A, #86BBD8);
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+.title-espetaculos h1 {
+    font-size: 48px;
+    text-align: center;
 }
