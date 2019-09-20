@@ -1,48 +1,46 @@
-html, body{
+html,
+body {
     font-family: 'Raleway', sans-serif;
 }
 
-.navFont{
-    font-size:24px;
-
-    animation-name:navbar-top;
-    animation-duration:1.5s;
+.navFont {
+    font-size: 24px;
+    animation-name: navbar-top;
+    animation-duration: 1.5s;
 }
 
-.button{
-    position:relative;
-    background-color: #86BBD8;
-    padding:10px;
-    border-radius:30%;
-
+.button {
+    position: relative;
+    background-color: #1d434e;
+    padding: 10px;
+    border-radius: 30%;
     text-align: center;
 }
 
-.button a{
+.button a {
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
-.button:hover{
-    background-color:#F6AE2D;
-    
+.button:hover {
+    background-color: #F6AE2D;
 }
 
-.button-login{
+.button-login {
     text-align: center;
 }
 
+.navbar-color {
+    background-image: linear-gradient(to right, #1d434e, #1d434e, #86BBD8)
+}
 
-
-
-@keyframes navbar-top{
-    0%{
-        opacity:0;
+@keyframes navbar-top {
+    0% {
+        opacity: 0;
         margin-left: 10%;
-
     }
-    100%{
-        opacity:1;
-        margin-left:0;
+    100% {
+        opacity: 1;
+        margin-left: 0;
     }
 }
