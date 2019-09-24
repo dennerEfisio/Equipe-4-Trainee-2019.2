@@ -10,6 +10,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     color: white;
+    height: 100%;
     padding: 20%;
     text-align: center;
 }
@@ -23,18 +24,13 @@ body {
     font-weight: 400;
 }
 
-.info {
-    background-image: linear-gradient(#1d434e, #33658A, #86BBD8, #86BBD8, #33658A, #1d434e);
-    width: 100%;
-    height: auto;
-}
-
 .parallax2 {
     background-image: radial-gradient( #1d434e, #33658A, #86BBD8, #86BBD8, #33658A, #1d434e);
     background-attachment: fixed;
     color: white;
     padding: 20%;
     text-align: center;
+    height: 100%;
 }
 
 .parallax2 h1 {
@@ -55,6 +51,7 @@ body {
     color: white;
     padding: 20%;
     text-align: center;
+    height: 100%;
 }
 
 .parallax3 h1 {
@@ -66,39 +63,14 @@ body {
     font-weight: 400;
 }
 
-.card-info {
-    background-image: linear-gradient( #86BBD8, #86BBD8, #86BBD8, #33658A, #1d434e);
+.conteudo {
+    opacity: 0;
 }
 
-.btn-color {
-    background-color: #F26419;
-}
-
-.fotos {
-    display: flex;
-    flex-direction: column;
-    padding: 3%;
-}
-
-.primeiraLinha {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.primeiraLinha img {
-    width: 20%;
-}
-
-.title-espetaculos {
-    background-image: linear-gradient( #1d434e, #33658A, #86BBD8);
-    padding-bottom: 1%;
-    padding-top: 1%;
-}
-
-.title-espetaculos h1 {
-    font-size: 48px;
-    text-align: center;
+.acao {
+    opacity: 1;
+    animation-name: texto-parallax;
+    animation-duration: 1.5s;
 }
 
 @media (max-width:1400px) {
@@ -110,5 +82,16 @@ body {
     }
     .parallax3 p {
         font-size: 30px;
+    }
+}
+
+@keyframes texto-parallax {
+    0% {
+        opacity: 0;
+        margin-left: 100px;
+    }
+    100% {
+        opacity: 1;
+        margin-left: 0;
     }
 }
