@@ -1,0 +1,108 @@
+html,
+
+body{
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.titulo{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 60px;
+    text-align: center;
+    color:#33658A;
+    padding-right: 20%;
+    padding-left: 20%;
+
+    animation-name: deslize;
+    animation-duration: 3s;
+   
+}
+
+.texto {
+    font-weight: 300;
+    text-align: justify;
+    color: black;
+    padding: 5% 20% 2% 20%;
+
+    animation-name: fade;
+    animation-duration: 4s;
+}
+
+.fotos{
+    margin-top: 40px;
+    padding-left: 14%;
+    padding-right: 14%;
+    margin-bottom: 100px;
+
+    animation-name: fade;
+    animation-duration: 6s;
+}
+
+.membros {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-repeat: contain;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    background-color: #1d434e;
+    opacity: 0;
+}
+
+.slide:hover{
+    opacity: 0.8;
+}
+
+.slide-titulo h1 {
+    color: #F26419;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 40%;
+}
+
+.slide-titulo h2 {
+    color: white;
+    font-size: 14px;
+    text-transform: none;
+    text-align: center;
+}
+
+
+@keyframes fade {
+    0%{opacity: 0}
+    50% {opacity: }
+    100%{opacity: 1;}
+}
+
+@keyframes deslize {
+    0% {transform: translate(50px, 0px)}
+    100%{transform: translate(0px, 0px)}
+}
+
+@media (max-width: 1000px) {
+    .titulo {
+        font-size: 32px;
+    }
+
+    .texto {
+        font-size: 18px;
+        padding: 8%;
+    }
+
+    .fotos {
+        padding: auto;
+    }
+
+    .membros {
+    }
+
+
+}
