@@ -10,7 +10,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     color: white;
-    height: 100%;
+    width: 100%;
     padding: 20%;
     text-align: center;
 }
@@ -30,7 +30,7 @@ body {
     color: white;
     padding: 20%;
     text-align: center;
-    height: 100%;
+    width: 100%;
 }
 
 .parallax2 h1 {
@@ -51,7 +51,7 @@ body {
     color: white;
     padding: 20%;
     text-align: center;
-    height: 100%;
+    width: 100%;
 }
 
 .parallax3 h1 {
@@ -74,7 +74,7 @@ body {
     animation-duration: 1.5s;
 }
 
-@media (max-width:1400px) {
+@media (max-width:800px) {
     .parallax1 p {
         font-size: 30px;
     }
