@@ -5,76 +5,79 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 
-.titulo{
-    margin-top: 100px;
-    margin-bottom: 20px;
-    font-weight: 600;
-    font-size: 60px;
-    text-align: center;
-    color:#33658A;
-    padding-right: 20%;
-    padding-left: 20%;
+.container {
+    padding: 5% 13%;   
+}
 
+.titulo-imagem {
+    text-align: center;
+}
+
+.titulo-imagem h1{
+    font-size: 60px;
+    font-weight: 600;
+    color: #33658A;
+    
     animation-name: deslize;
     animation-duration: 3s;
-   
 }
 
 .texto {
-    font-weight: 300;
     text-align: justify;
     color: black;
-    padding: 5% 20% 2% 20%;
+    font-weight: 300;
+    font-size: 24px;
 
     animation-name: fade;
     animation-duration: 4s;
 }
 
-.fotos{
-    margin-top: 40px;
-    padding-left: 14%;
-    padding-right: 14%;
-    margin-bottom: 100px;
-
+.row {
     animation-name: fade;
     animation-duration: 6s;
 }
 
-.membros {
+.col-sm-4 {
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: inline-block;
+    overflow: hidden;
     width: 300px;
     height: 300px;
-    display: inline-block;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    background-repeat: contain;
 }
 
 .slide {
     width: 100%;
     height: 100%;
     background-color: #1d434e;
-    opacity: 0;
-}
+    background-size: contain;
 
-.slide:hover{
     opacity: 0.8;
 }
 
-.slide-titulo h1 {
-    color: #F26419;
-    font-size: 18px;
-    text-transform: uppercase;
+.slide:hover {
+    opacity: 0;
+}
+
+.slide-titulo {
+    padding-top: 45%;
     text-align: center;
-    padding-top: 40%;
+}
+
+.slide-titulo h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #F26419;
 }
 
 .slide-titulo h2 {
-    color: white;
-    font-size: 14px;
     text-transform: none;
+    font-size: 14px;
+    color: white;
     text-align: center;
 }
-
 
 @keyframes fade {
     0%{opacity: 0}
@@ -88,21 +91,11 @@ body{
 }
 
 @media (max-width: 1000px) {
-    .titulo {
+    .titulo-imagem h1 {
         font-size: 32px;
     }
 
     .texto {
-        font-size: 18px;
+        font-size: 16px;
         padding: 8%;
     }
-
-    .fotos {
-        padding: auto;
-    }
-
-    .membros {
-    }
-
-
-}
