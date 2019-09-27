@@ -26,8 +26,7 @@ body {
 
 .produtosHome {
     width: 100%;
-    padding: 5% 10% 5% 10%;
-    background-image: linear-gradient(to right, #1d434e, #86BBD8, #86BBD8, #1d434e);
+    background-color: black;
 }
 
 .tituloProdutosHome {
@@ -104,7 +103,7 @@ body {
     animation-duration: 1.5s;
 }
 
-@media (max-width:800px) {
+@media (max-width:1000px) {
     .parallax1 p {
         font-size: 30px;
     }
@@ -113,6 +112,9 @@ body {
     }
     .parallax3 p {
         font-size: 30px;
+    }
+    .textoCarousel p {
+        display: none;
     }
 }
 
