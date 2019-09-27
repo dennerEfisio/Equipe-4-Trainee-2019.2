@@ -1,12 +1,8 @@
-/* html,
+ html,
 
 body{
     background-color: white;
     font-family: 'Raleway', sans-serif;
-}
-
-.container {
-    padding: 5% 13%;   
 }
 
 .titulo-imagem {
@@ -16,6 +12,15 @@ body{
 .titulo-imagem h1{
     font-size: 60px;
     font-weight: 600;
+    color: #33658A;
+
+    animation-name: deslize;
+    animation-duration: 3s;
+}
+
+.titulo-imagem h2{
+    font-size: 42px;
+    font-weight: 700;
     color: #33658A;
 
     animation-name: deslize;
@@ -32,76 +37,10 @@ body{
     animation-duration: 4s;
 }
 
-.membros {
-    animation-name: fade;
-    animation-duration: 6s;
+.main {
+    margin-top: 9%;
+    margin-bottom: 9%;
 }
-
-.fotos {
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 300px;
-    height: 300px;
-    padding: 0;
-    margin-bottom: 1%;
-}
-
-.slide-membros {
-    width: 100%;
-    height: 100%;
-    background-color: #1d434e;
-    background-size: contain;
-    overflow: hidden;
-
-    opacity: 0.8;
-}
-
-.slide-membros:hover {
-    opacity: 0;
-}
-
-.slide-titulo {
-    padding-top: 45%;
-    text-align: center;
-}
-
-.slide-titulo h1 {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 18px;
-    color: #F26419;
-}
-
-.slide-titulo h2 {
-    text-transform: none;
-    font-size: 14px;
-    color: white;
-    text-align: center;
-}
-
-@keyframes fade {
-    0%{opacity: 0}
-    50% {opacity: }
-    100%{opacity: 1;}
-}
-
-@keyframes deslize {
-    0% {transform: translate(50px, 0px)}
-    100%{transform: translate(0px, 0px)}
-}
-
-@media (max-width: 1000px) {
-    .titulo-imagem h1 {
-        font-size: 32px;
-    }
-
-    .texto {
-        font-size: 16px;
-        padding: 8%;
-    }
-} */
-
 
 .fotos {
     border: none;
@@ -116,6 +55,10 @@ body{
 .container-fotos {
     width: 50%;
     margin-bottom: 1%;
+    margin-top: 2%;
+
+    animation-name: fade;
+    animation-duration: 6s;
 }
 
 .overlay {
@@ -128,22 +71,85 @@ body{
     width: 96.5%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #008CBA;
+    background-color: #1d434e;
     margin-right: -3.5%;
 }
 
 .container-fotos:hover .overlay {
-    opacity: 1;
+    opacity: 0.8;
 }
 
 .text-card {
-    color: white;
+    color: #F6AE2D;
     font-size: 20px;
-    position: absolute;
+    text-transform: uppercase;
+    position: relative;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+.text-card-info {
+    color: white;
+    font-size: 16px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+@keyframes fade {
+    0%{opacity: 0}
+    50% {opacity: }
+    100%{opacity: 1;}
+}
+
+@keyframes deslize {
+    0% {transform: translate(50px, 0px)}
+    100%{transform: translate(0px, 0px)}
+}
+
+@media screen and (max-width: 800px) {
+
+    .main {
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+    }
+
+    .titulo-imagem h1{
+        font-size: 28px;
+    }
+
+    .titulo-imagem h2{
+        font-size: 22px;
+    }
+
+    .texto {
+        font-size: 18px;
+    }
+
+    .container-fotos{
+        width: 80%;
+    }
+
+    .overlay {
+        width: 94.5%;
+        height: 100%;
+        opacity: 0.62;
+    }
+      
+    .text-card{
+        font-size: 16px;
+    }
+
+    .text-card-info {
+        font-size: 14px;
+    }
+
 }
