@@ -1,11 +1,6 @@
 
 .portcontainerdest{
- background-color:#1d434e ;
- border-top-style: solid;
-  border-bottom-style: solid;
-  border-width: 1px;
-  border-color: #1d434e;
-  margin:2% 0 0.5% 0;
+padding: 0px !important;
 }
 
 .portdest{
@@ -32,6 +27,7 @@
   animation: portiniciotexto;
   animation-duration: 2s;
   opacity: 1;
+  padding-left: 10%;
 }
 
 .portnomepeca{
@@ -64,28 +60,10 @@
   opacity: 0;
 }
 
-.portcontainer{
-  background-color:black;
-}
 
 .port{
-  border:none;
+  border:none !important;
 }
-
-/*
-
-
-
-
-
-
-
-
-.card-body{ 
-  padding-top: -10px;
-  }
-
-
 
 .port:hover .portinfo {
   animation:portdestaqueinfo;
@@ -106,7 +84,8 @@
   animation-duration: 2s;
   bottom: 15%;
 }
-*/
+
+
 @keyframes portinicio {
     0% {
         opacity: 0; height:0%;
