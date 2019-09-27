@@ -1,4 +1,5 @@
 document.getElementById("conteudo1").className += " acao";
+document.querySelector(".produtosHome").className += " acao-prodHome";
 
 document.addEventListener("scroll", function() {
 

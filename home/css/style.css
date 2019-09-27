@@ -24,23 +24,34 @@ body {
     font-weight: 400;
 }
 
-.produtosHome{
-    width:100%;
-    height:80%;
+.produtosHome {
+    width: 100%;
+    padding: 5% 10% 5% 10%;
+    background-image: linear-gradient(#1d434e, #86BBD8)
 }
 
-.textoCarousel{
-    display:flex;
+.tituloProdutosHome {
+    display: flex;
+    justify-content: center;
+}
+
+.tituloProdutosHome h2 {
+    color: white;
+    font-size: 42px;
+}
+
+.textoCarousel {
+    display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.textoCarousel h5{
-    font-size:32px;
+.textoCarousel h5 {
+    font-size: 32px;
 }
 
-.textoCarousel p{
-    font-size:24px;
+.textoCarousel p {
+    font-size: 24px;
 }
 
 .parallax2 {
@@ -93,6 +104,16 @@ body {
     animation-duration: 1.5s;
 }
 
+.acao-slide {
+    animation-name: slide-translate;
+    animation-duration: 1.5s;
+}
+
+.acao-prodHome {
+    animation-name: slide-translate;
+    animation-duration: 2s;
+}
+
 @media (max-width:800px) {
     .parallax1 p {
         font-size: 30px;
@@ -113,5 +134,14 @@ body {
     100% {
         opacity: 1;
         transform: translate(0px, 0px);
+    }
+}
+
+@keyframes slide-translate {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
