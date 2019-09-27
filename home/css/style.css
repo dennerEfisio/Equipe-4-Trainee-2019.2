@@ -104,16 +104,6 @@ body {
     animation-duration: 1.5s;
 }
 
-.acao-slide {
-    animation-name: slide-translate;
-    animation-duration: 1.5s;
-}
-
-.acao-prodHome {
-    animation-name: slide-translate;
-    animation-duration: 2s;
-}
-
 @media (max-width:800px) {
     .parallax1 p {
         font-size: 30px;
@@ -134,14 +124,5 @@ body {
     100% {
         opacity: 1;
         transform: translate(0px, 0px);
-    }
-}
-
-@keyframes slide-translate {
-    0% {
-        opacity: 0
-    }
-    100% {
-        opacity: 1;
     }
 }

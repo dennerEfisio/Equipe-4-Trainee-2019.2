@@ -1,5 +1,4 @@
 document.getElementById("conteudo1").className += " acao";
-document.querySelector(".produtosHome").className += " acao-prodHome";
 
 document.addEventListener("scroll", function() {
 
@@ -8,6 +7,7 @@ document.addEventListener("scroll", function() {
 
     var ALTURA = window.innerHeight;
     var LARGURA = window.innerWidth;
+
 
     if (scrollY + ALTURA > cont2.offsetTop)
         cont2.className += " acao";
