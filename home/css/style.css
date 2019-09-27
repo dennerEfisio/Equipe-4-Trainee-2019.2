@@ -55,7 +55,7 @@ body {
 }
 
 .parallax2 {
-    background-image: radial-gradient(#86BBD8, #86BBD8, #33658A, #1d434e);
+    background-image: radial-gradient(#86BBD8, #86BBD8, #1d434e);
     background-attachment: fixed;
     color: white;
     padding: 20%;
