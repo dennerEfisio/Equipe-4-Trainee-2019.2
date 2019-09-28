@@ -4,14 +4,12 @@ body {
 }
 
 .parallax1 {
-    background-image: url(../imgs/peca-teatro1.jpg);
+    background-image: linear-gradient(to right bottom, black, white, white, black);
     background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
     background-attachment: fixed;
-    color: white;
+    color: black;
     width: 100%;
-    padding: 20%;
+    padding: 15%;
     text-align: center;
 }
 
@@ -25,8 +23,9 @@ body {
 }
 
 .produtosHome {
+    padding-top: 2%;
     width: 100%;
-    background-color: black;
+    background-color: white;
 }
 
 .tituloProdutosHome {
@@ -35,8 +34,9 @@ body {
 }
 
 .tituloProdutosHome h2 {
-    color: white;
+    color: black;
     font-size: 42px;
+    padding-bottom: 2%;
 }
 
 .textoCarousel {
@@ -53,11 +53,18 @@ body {
     font-size: 24px;
 }
 
+.corBotao {
+    background-color: white;
+}
+
 .parallax2 {
-    background-image: radial-gradient(#86BBD8, #86BBD8, #1d434e);
+    background-image: url(../imgs/peca-teatro1.2.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
     color: white;
-    padding: 20%;
+    padding: 15%;
     text-align: center;
     width: 100%;
 }
@@ -72,13 +79,11 @@ body {
 }
 
 .parallax3 {
-    background-image: url(../imgs/peca-teatro2.jpg);
+    background-image: linear-gradient(to left bottom, black, white, white, black);
     background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
     background-attachment: fixed;
-    color: white;
-    padding: 20%;
+    color: black;
+    padding: 15%;
     text-align: center;
     width: 100%;
 }

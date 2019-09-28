@@ -1,7 +1,8 @@
-document.getElementById("conteudo1").className += " acao";
+document.getElementById("tituloProdutosHome").className += " acao";
 
 document.addEventListener("scroll", function() {
 
+    var cont1 = document.getElementById("conteudo1");
     var cont2 = document.getElementById("conteudo2");
     var cont3 = document.getElementById("conteudo3");
 
@@ -9,6 +10,8 @@ document.addEventListener("scroll", function() {
     var LARGURA = window.innerWidth;
 
 
+    if (scrollY + ALTURA > cont1.offsetTop)
+        cont1.className += " acao";
     if (scrollY + ALTURA > cont2.offsetTop)
         cont2.className += " acao";
     if (scrollY + ALTURA > cont3.offsetTop)
