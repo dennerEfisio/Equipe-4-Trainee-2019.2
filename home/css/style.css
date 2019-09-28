@@ -40,9 +40,8 @@ body {
 }
 
 .textoCarousel {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    animation-name: texto-parallax;
+    animation-duration: 1s;
 }
 
 .textoCarousel h5 {
@@ -53,8 +52,14 @@ body {
     font-size: 24px;
 }
 
-.corBotao {
-    background-color: white;
+.descricao {
+    display: none;
+}
+
+.mostraTexto {
+    display: block;
+    animation-name: texto-parallax;
+    animation-duration: 2s;
 }
 
 .parallax2 {
@@ -105,7 +110,7 @@ body {
 .acao {
     opacity: 1;
     animation-name: texto-parallax;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
 }
 
 @media (max-width:1000px) {
@@ -119,6 +124,9 @@ body {
         font-size: 30px;
     }
     .textoCarousel p {
+        display: none;
+    }
+    .textoCarousel a {
         display: none;
     }
 }
