@@ -57,9 +57,10 @@ body {
 }
 
 .mostraTexto {
+    position: relative;
     display: block;
-    animation-name: texto-parallax;
-    animation-duration: 2s;
+    animation-name: descricao-slide;
+    animation-duration: 0.5s;
 }
 
 .parallax2 {
@@ -135,6 +136,17 @@ body {
     0% {
         opacity: 0;
         transform: translate(100px, 0px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes descricao-slide {
+    0% {
+        opacity: 0;
+        transform: translate(0px, 10px);
     }
     100% {
         opacity: 1;
