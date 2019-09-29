@@ -1,5 +1,3 @@
-document.getElementById("tituloProdutosHome").className += " acao";
-
 document.addEventListener("scroll", function() {
 
     var cont1 = document.getElementById("conteudo1");

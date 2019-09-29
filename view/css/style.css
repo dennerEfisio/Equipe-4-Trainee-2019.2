@@ -1,8 +1,3 @@
-html,
-body {
-    font-family: 'Raleway', sans-serif;
-}
-
 .parallax1 {
     background-image: linear-gradient(to right bottom, black, white, white, black);
     background-position: center top;
@@ -26,17 +21,6 @@ body {
     padding-top: 2%;
     width: 100%;
     background-color: white;
-}
-
-.tituloProdutosHome {
-    display: flex;
-    justify-content: center;
-}
-
-.tituloProdutosHome h2 {
-    color: black;
-    font-size: 42px;
-    padding-bottom: 2%;
 }
 
 .textoCarousel {
