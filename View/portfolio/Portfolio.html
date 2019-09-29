@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="js/portfolio.js"></script>
+
+    <title>Portfólio</title>
+  </head>
+  <body class="portBody">
+
+    <div class="portTitulo">Portfólio</div>
+
+    <div class="portContainerCarrossel row">
+        <div class="portCarrosselDest col-sm-3">
+            <h1 id="palavraDest">Destaque:</h1>
+            <br/>Hermanoteu<br/>
+            na Terra de <br/>
+            Godah
+            <button type="button" class="portCarrosselInfo btn" data-toggle="modal" data-target="#portModal">Saiba Mais</button>
+        </div>
+        <div id="portCarrossel" class=" portCarrossel carousel slide col-sm-9" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="portCarrosselImg" src="imagens/imgCar.png">
+                </div>
+                <div class="carousel-item">
+                    <img class="portCarrosselImg" src="imagens/imgCar2.png">
+                </div>
+                <div class="carousel-item">
+                    <img class="portCarrosselImg" src="imagens/imgCar3.png">
+                </div>
+      </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#portCarrossel" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#portCarrossel" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</div>
+
+<div class="portFiltro">
+    <form class="form-inline">
+      <div class="dropdown portFiltroDrop">
+        <button type="button" class="btn portFiltroBuscaBotao dropdown-togglec" data-toggle="dropdown">
+          Filtragem por....
+        </button>
+        <div class="dropdown-menu">
+          <h5 class="dropdown-header">Gênero</h5>
+          <a class="dropdown-item" href="#">Teste 1</a>
+          <a class="dropdown-item" href="#">Teste 2</a>
+          <a class="dropdown-item" href="#">Teste 3</a>
+          <h5 class="dropdown-header">Classificação</h5>
+          <a class="dropdown-item" href="#">Teste 1</a>
+          <a class="dropdown-item" href="#">Teste 2</a>
+          <a class="dropdown-item" href="#">Teste 3</a>
+        </div>
+    </div>
+    <input class=" portFiltroBusca form-control mr-sm-2" type="search" placeholder="Pesquise por Peças aqui..." aria-label="Search">
+    <button class=" portFiltroBuscaBotao btn my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</div>
+
+
+<div class="portContainerCards">
+    <div class="row">
+            <div class="container portCard col-sm-4">
+                <img src="imagens/img1.jpg" alt="Peça de teatro" class="portCardImg">
+                <div class="portDestaque"></div>
+                <div class="portCardNomePeca">Nome da Peça</div>
+                <button type="button" class="portCardInfo btn" data-toggle="modal" data-target="#portModal">Saiba Mais</button>
+            </div>
+            <div class="container portCard col-sm-4">
+                <img src="imagens/img2.jpg" alt="Peça de teatro" class="portCardImg">
+                <div class="portDestaque"></div>
+                <div class="portCardNomePeca">Nome da Peça</div>
+                <button type="button" class="portCardInfo btn" data-toggle="modal" data-target="#portModal">Saiba Mais</button>
+            </div>
+            <div class="container portCard col-sm-4">
+                <img src="imagens/img3.jpg" alt="Peça de teatro" class="portCardImg">
+                <div class="portDestaque"></div>
+                <div class="portCardNomePeca">Nome da Peça</div>
+                <button type="button" class="portCardInfo btn" data-toggle="modal" data-target="#portModal">Saiba Mais</button>
+            </div>
+            <div class="container portCard col-sm-4">
+                <img src="imagens/img4.jpg" alt="Peça de teatro" class="portCardImg">
+                <div class="portDestaque"></div>
+                <div class="portCardNomePeca">Nome da Peça</div>
+                <button type="button" class="portCardInfo btn" data-toggle="modal" data-target="#portModal">Saiba Mais</button>
+            </div>
+            <div class="container portCard col-sm-4">
+                <img src="imagens/img5.jpg" alt="Peça de teatro" class="portCardImg">
+                <div class="portDestaque"></div>
+                <div class="portCardNomePeca">Nome da Peça</div>
+                <button type="button" class="portCardInfo btn" data-toggle="modal" data-target="#portModal">Saiba Mais</button>
+            </div>
+            <div class="container portCard col-sm-4">
+                <img src="imagens/img6.jpg" alt="Peça de teatro" class="portCardImg">
+                <div class="portDestaque"></div>
+                <div class="portCardNomePeca">Nome da Peça</div>
+                <button type="button" class="portCardInfo btn" data-toggle="modal" data-target="#portModal">Saiba Mais</button>
+            </div>
+        </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="portModal" tabindex="-1" role="dialog" aria-labelledby="portModalTitulo" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="portModal modal-content">
+      <div class="portModalHead modal-header">
+        <h5 class="modal-title" id="portModalTitulo">Nome da Peça</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="portModalBody modal-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id tristique urna. Donec gravida tincidunt sapien sit amet vehicula. Nam lobortis lacus in pretium feugiat. Nam et fringilla orci. Aenean gravida, lorem sit amet ornare lacinia, lacus sapien vulputate massa, non ultrices nunc erat eget odio. Fusce ac augue eu neque rhoncus cursus sed a est. Nunc eu ipsum tortor. Etiam quis eros hendrerit purus congue volutpat. Duis lobortis, velit et luctus porttitor, arcu ligula tincidunt mauris, commodo tincidunt dui tortor ac tellus. Curabitur quis turpis egestas, lobortis risus non, cursus massa. Sed a porta dui.</p>
+      </div>
+      <div class="portModalFooter modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
