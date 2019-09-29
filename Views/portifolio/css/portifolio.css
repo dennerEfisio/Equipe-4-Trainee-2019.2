@@ -1,135 +1,105 @@
 
-.portcontainerdest{
-padding: 0px !important;
+.portBody{
+	background-color: black;
+	font-family: 'Raleway', sans-serif;
+	animation-name: inicio;
+    animation-duration: 6s;
 }
 
-.portdest{
-  position:absolute;
-  width: 102%;
-  height:100%;
-  left:-1%;
-  border-bottom-style: solid;
-  border-width: 8px;
-  border-color: #1d434e;
+.portTitulo {
+    text-align: center;
+    font-size: 400%;
+    font-weight: 600;
+    color: #33658A;
+    margin:3% 0 1% 0;
 }
 
-.textodest{
-  background-color: rgba(1, 1, 1, 0);
-  width:40%;
-  text-align: center;
+.portCarrosselDest{
+	position:absolute;
+	background-color:rgba(0,0,0,0);
+	text-align: center;
+	font-size: 200%;
+    color: white;
+    top:95%;/*Só pra ver q tá lá a div*/
 }
 
-.textonomepecadest{
-  font-size:250%;
-  color:white;
-  position: absolute;
-  bottom:9%;
-  animation: portiniciotexto;
-  animation-duration: 2s;
-  opacity: 1;
-  padding-left: 10%;
+.portCarrossel{
+	position: relative;
+	background-color:rgba(0,0,0,1);
+	width:70%;
+	margin:auto;
+	margin-bottom:3%;
 }
 
-.portnomepeca{
-  width:100%;
-  height:20%;
-  position: absolute;
-  background-color: #1d434e;
-  animation: portinicio;
-  animation-duration: 2s;
-  opacity: 0.5;
-  bottom:0%;
+.portCarrosselImg{
+	/*position:absolute !important;  Não aceita absolute, por isso a div portCarrosselDest está em baixo*/ 
+	width:100%;
+	height:450px;
+	border: 2px solid rgba(242, 100, 25, 0.5);  /*#f26419*/
 }
 
-.textonomepeca{
-  font-size:160%;
-  color:white;
-  position: absolute;
-  left:3%;
-  bottom:10%;
-  animation: portiniciotexto;
-  animation-duration: 2s;
-  opacity: 1;
+.portContainerCards{
+	position: relative;
+	width:80%;
+	margin:auto;
 }
 
-.portinfo{
-  width:30%;
-  position: absolute;
-  bottom: 0%;
-  left:-30%;
-  opacity: 0;
+.portCard {
+    margin:1% 0 0.25% -0; 
+    position:relative;
 }
 
-.port{
-  border:none !important;
+.portCardImg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(242, 100, 25, 0.5);
 }
 
-.port:hover .portinfo {
-  animation:portdestaqueinfo;
-  animation-duration: 2s;
-  animation-delay: -0.5s;
-  opacity: 1;
-  left:67%;
-  bottom:3%;
-}
-.port:hover .portnomepeca {
-  animation:portdestaque;
-  animation-duration: 2s;
-  height:25%;
-}
-
-.port:hover .textonomepeca {
-  animation:portdestaquenome;
-  animation-duration: 2s;
-  bottom: 15%;
+.portDestaque {
+    position: absolute;
+    top: 0;
+    left: 4%;
+    height: 100%;
+    width: 92%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #1d434e;
+    border: 2px solid rgba(242, 100, 25, 1);
+ 
 }
 
-
-@keyframes portinicio {
-    0% {
-        opacity: 0; height:0%;
-    } 50% {
-        opacity: 0.5; height:12%;
-    } 100% {
-        opacity: 0.5; height:20%;
-    }
+.portCardInfo {
+    color: #F6AE2D;
+    font-size: 110%;
+    text-transform: uppercase; /*Letra maiuscula*/
+    position: absolute;
+    top: 70%;
+    left:35%;
+    margin-bottom:2%;
+    text-align: center; 
 }
 
-@keyframes portiniciotexto {
-    0% {
-        opacity: 0;bottom: 0%;
-    } 50%{
-        opacity: 0.5;bottom:2%;
-    } 75% {
-        opacity: 1;
-    } 100% {
-        opacity: 1;bottom: 9%; 
-    }
+.portCardInfo2 {
+    color: white;
+    font-size: 100%;
+    position: absolute;
+    top: 80%;
+    left: 35%;
+    text-align: center;
+}  
+
+.portCarrossel:hover .portCarrosselImg{
+	border:2px solid rgba(242, 100, 25, 1);
+}
+
+.portCard:hover .portDestaque{
+    opacity: 0.8; 
 }
 
 
-@keyframes portdestaque {
-    0% {
-      height: 20%;
-    } 100% {
-       height:25%;
-    }
+@keyframes inicio {
+    0%{opacity: 0}
+    50% {opacity: 0.6}
+    100%{opacity: 1;}
 }
-
-@keyframes portdestaqueinfo {
-    0% {
-      opacity: 0;left:-30%;
-    } 50% {
-      opacity: 0;left:0%;
-    } 100% {
-      opacity: 1;left:67%;
-    }
-}
-
-@keyframes portdestaquenome {
-    0% {
-      bottom:10%;
-    } 100% {
-      bottom:15%;
-    }
-} 

@@ -1,121 +1,99 @@
 <!doctype html>
 <html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-  <!-- Meta tags Obrigatórias -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/portifolio.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <link rel="stylesheet" type="text/css" href="css/portifolio.css">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="js/portifolio.js"></script>
 
-  <script src="js/portifolio.js"></script>
+    <title>Portifólio</title>
+  </head>
+  <body class="portBody">
 
-  <title>Portifólio</title>
-</head>
+    <div class="portTitulo">Portifólio</div>
 
-<body>
+    <div class="portContainerCarrossel">
+    <div id="portCarrossel" class=" portCarrossel carousel slide" data-ride="carousel">
+        <div class="portCarrosselDest">Destaque: Hermanoteu na Terra de Godah</div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="portCarrosselImg" src="imagens/imgCar.png">
+                    <div class="carousel-caption d-none d-md-block">
+                    <p>Cena 1: kkhiyfr6d6</p>
+                    </div>
+            </div>
+            <div class="carousel-item">
+                <img class="portCarrosselImg" src="imagens/imgCar2.png">
+            </div>
+            <div class="carousel-item">
+                <img class="portCarrosselImg" src="imagens/imgCar3.png">
+            </div>
+      </div>
   
-  <div class="container-fluid portcontainerdest">
-    <div class="portdest card ">
-      <img class="portimg card-img-top " src="imagens/destaque.jpg" alt="Card image cap">
-      <div class="portnomepeca"></div>
-      <div class="textonomepecadest">Peça em Destaque: Nome</div>
-      <button type="button" class="portinfo btn btn-warning" data-toggle="modal" data-target="#exampleModalLong">Saiba
-        mais</button>
-    </div>
-  </div>
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#portCarrossel" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#portCarrossel" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</div>
 
-  <div class="container portcontainer ">
-    <div class="teste row">
-
-      <div class="port card col-sm-4 ">
-        <img class="portimg card-img-top " src="imagens/teste.png" alt="Card image cap">
-        <div class="portnomepeca"></div>
-        <div class="textonomepeca">Nome</div>
-        <button type="button" class="portinfo btn btn-outline-warning" data-toggle="modal"
-          data-target="#exampleModalLong">Saiba mais</button>
-      </div>
-
-      <div class="port card col-sm-4 ">
-        <img class="portimg card-img-top " src="imagens/teste.png" alt="Card image cap">
-        <div class="portnomepeca"></div>
-        <div class="textonomepeca">Nome</div>
-        <button type="button" class="portinfo btn btn-warning" data-toggle="modal" data-target="#exampleModalLong">Saiba
-          mais</button>
-      </div>
-
-      <div class="port card col-sm-4 ">
-        <img class="portimg card-img-top " src="imagens/teste.png" alt="Card image cap">
-        <div class="portnomepeca"></div>
-        <div class="textonomepeca">Nome</div>
-        <button type="button" class="portinfo btn btn-warning" data-toggle="modal" data-target="#exampleModalLong">Saiba
-          mais</button>
-      </div>
-
-
-      <div class="port card col-sm-4 ">
-        <img class="portimg card-img-top " src="imagens/teste.png" alt="Card image cap">
-        <div class="portnomepeca"></div>
-        <div class="textonomepeca">Nome</div>
-        <button type="button" class="portinfo btn btn-warning" data-toggle="modal" data-target="#exampleModalLong">Saiba
-          mais</button>
-      </div>
-
-      <div class="port card col-sm-4 ">
-        <img class="portimg card-img-top " src="imagens/teste.png" alt="Card image cap">
-        <div class="portnomepeca"></div>
-        <div class="textonomepeca">Nome</div>
-        <button type="button" class="portinfo btn btn-warning" data-toggle="modal" data-target="#exampleModalLong">Saiba
-          mais</button>
-      </div>
-
-      <div class="port card col-sm-4 ">
-        <img class="portimg card-img-top " src="imagens/teste.png" alt="Card image cap">
-        <div class="portnomepeca"></div>
-        <div class="textonomepeca">Nome</div>
-        <button type="button" class="portinfo btn btn-warning" data-toggle="modal" data-target="#exampleModalLong">Saiba
-          mais</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+<div class="portContainerCards">
+    <div class="row">
+            <div class="container portCard col-sm-4">
+                <img src="imagens/img1.jpg" alt="Peça de teatro" class="portCardImg">
+                <div class="portDestaque">
+                    <div class="portCardInfo">Saiba Mais</div>
+                    <div class="portCardInfo2">Colocar Botão</div>
+                </div>
+            </div>
+            <div class="container portCard col-sm-4">
+                <img src="imagens/img2.jpg" alt="Peça de teatro" class="portCardImg">
+                <div class="portDestaque">
+                    <div class="portCardInfo">Saiba Mais</div>
+                    <div class="portCardInfo2">Colocar Botão</div>
+                </div>
+            </div>
+            <div class="container portCard col-sm-4">
+                <img src="imagens/img3.jpg" alt="Peça de teatro" class="portCardImg">
+                <div class="portDestaque">
+                    <div class="portCardInfo">Saiba Mais</div>
+                    <div class="portCardInfo2">Colocar Botão</div>
+                </div>
+            </div>
+            <div class="container portCard col-sm-4">
+                <img src="imagens/img4.jpg" alt="Peça de teatro" class="portCardImg">
+                <div class="portDestaque">
+                    <div class="portCardInfo">Saiba Mais</div>
+                    <div class="portCardInfo2">Colocar Botão</div>
+                </div>
+            </div>
+            <div class="container portCard col-sm-4">
+                <img src="imagens/img5.jpg" alt="Peça de teatro" class="portCardImg">
+                <div class="portDestaque">
+                    <div class="portCardInfo">Saiba Mais</div>
+                    <div class="portCardInfo2">Colocar Botão</div>
+                </div>
+            </div>
+            <div class="container portCard col-sm-4">
+                <img src="imagens/img6.jpg" alt="Peça de teatro" class="portCardImg">
+                <div class="portDestaque">
+                    <div class="portCardInfo">Saiba Mais</div>
+                    <div class="portCardInfo2">Colocar Botão</div>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-          ..............
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
 
-
-
-  <!-- JavaScript (Opcional) -->
-  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-</body>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>
