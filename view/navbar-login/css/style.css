@@ -74,21 +74,21 @@
 
 .botaoModal:hover{
     color: black;
-    background: #F6AE2D;
+    background: #F6AE2D !important;
     outline: none;
     border: none;
 }
 
 .botaoModal:focus{
     color: black;
-    background: #F26419;
+    background: #F26419 !important;
     outline: none;
     border: none;
 }
 
 .botaoModal:active{
     color: black;
-    background: #F26419;
+    background: #F26419 !important;
     outline: none;
     border: none;
 }
