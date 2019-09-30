@@ -62,7 +62,7 @@
     }
 }
 
-input[type=submit]{
+.botaoModal{
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     color: white;
@@ -72,21 +72,21 @@ input[type=submit]{
     display: block;
 }
 
-input[type=submit]:hover{
+.botaoModal:hover{
     color: black;
     background: #F6AE2D;
     outline: none;
     border: none;
 }
 
-input[type=submit]:focus{
+.botaoModal:focus{
     color: black;
     background: #F26419;
     outline: none;
     border: none;
 }
 
-input[type=submit]:active{
+.botaoModal:active{
     color: black;
     background: #F26419;
     outline: none;
