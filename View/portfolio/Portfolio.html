@@ -15,14 +15,12 @@
   </head>
   <body class="portBody">
 
-    <div class="portTitulo">Portfólio</div>
+    <div><h1 class="portTitulo">Portfólio</h1></div>
 
     <div class="portContainerCarrossel row">
         <div class="portCarrosselDest col-sm-3">
-            <h1 id="palavraDest">Destaque:</h1>
-            <br/>Hermanoteu<br/>
-            na Terra de <br/>
-            Godah
+            <h1 id="palavraDest">Destaque:</h1> 
+            <h2 id="nomeDest">Hermanoteu na Terra de  Godah</h2>
             <button type="button" class="portCarrosselInfo btn" data-toggle="modal" data-target="#portModal">Saiba Mais</button>
         </div>
         <div id="portCarrossel" class=" portCarrossel carousel slide col-sm-9" data-ride="carousel">
@@ -50,24 +48,26 @@
 
 <div class="portFiltro">
     <form class="form-inline">
-      <div class="dropdown portFiltroDrop">
-        <button type="button" class="btn portFiltroBuscaBotao dropdown-togglec" data-toggle="dropdown">
-          Filtragem por....
-        </button>
-        <div class="dropdown-menu">
-          <h5 class="dropdown-header">Gênero</h5>
-          <a class="dropdown-item" href="#">Teste 1</a>
-          <a class="dropdown-item" href="#">Teste 2</a>
-          <a class="dropdown-item" href="#">Teste 3</a>
-          <h5 class="dropdown-header">Classificação</h5>
-          <a class="dropdown-item" href="#">Teste 1</a>
-          <a class="dropdown-item" href="#">Teste 2</a>
-          <a class="dropdown-item" href="#">Teste 3</a>
-        </div>
-    </div>
-    <input class=" portFiltroBusca form-control mr-sm-2" type="search" placeholder="Pesquise por Peças aqui..." aria-label="Search">
-    <button class=" portFiltroBuscaBotao btn my-2 my-sm-0" type="submit">Search</button>
-  </form>
+	     <div class="dropdown portFiltroDrop">
+	        <button type="button" class="btn portFiltroBuscaBotao dropdown-togglec" data-toggle="dropdown">
+	          Filtragem por....
+	        </button>
+	        <div class="dropdown-menu">
+		        <h5 class="dropdown-header">Gênero</h5>
+		        <a class="dropdown-item" href="#">Teste 1</a>
+		        <a class="dropdown-item" href="#">Teste 2</a>
+		        <a class="dropdown-item" href="#">Teste 3</a>
+		        <h5 class="dropdown-header">Classificação</h5>
+		        <a class="dropdown-item" href="#">Teste 1</a>
+		        <a class="dropdown-item" href="#">Teste 2</a>
+		        <a class="dropdown-item" href="#">Teste 3</a>
+	        </div>
+	    </div>
+	    <div class="portFiltroBusca">
+		    <input class="form-control" type="search" placeholder="Pesquise por Peças aqui..." aria-label="Search">
+		    <button class=" portFiltroBuscaBotao btn" type="submit">Search</button>
+		</div>
+  	</form>
 </div>
 
 

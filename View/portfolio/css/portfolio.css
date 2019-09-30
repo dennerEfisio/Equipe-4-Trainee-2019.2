@@ -1,17 +1,17 @@
 
 .portBody{
 	background-color: black;
-	font-family: 'Raleway', sans-serif;
-	animation-name: inicio;
+	/*font-family: 'Raleway', sans-serif;*/
+    animation-name: inicio;
     animation-duration: 6s;
 }
 
 .portTitulo {
     text-align: center;
     font-size: 400%;
-    font-weight: 600;
+    /*font-weight: 600;*/    
     color: #33658A;
-    margin:1% 0 0 0;
+    margin:2% 0 1% 0;
     animation-name: textoInicio;
     animation-duration: 3s;
 }
@@ -34,12 +34,15 @@
     animation-duration: 3s;
 }
 
+#nomeDest{
+    top:100%;
+}
+
 .portCarrosselDest{  
 	position:absolute;
 	text-align: center;
 	font-size: 250%;
     color: white;
-    width:20%;
 }
 
 .portCarrosselInfo{
@@ -72,11 +75,14 @@
     position:relative;
     border-top:1px solid rgba(255,255, 255, 0.1);
     width:90%;
+    margin: auto;
+    padding-top:1%;
+    margin-bottom: 4%;
 }
 
-.portFiltroBusca{;
-    width:30%;
-    left:50%;
+.portFiltroBusca{
+    position: absolute;
+    left:42%;
 }
 
 .portFiltroBuscaBotao{ 
@@ -85,15 +91,11 @@
     border:2px solid white !important;
     color: #F6AE2D;
     font-size: 110%;
-    top:100%;
-    left:31%;
-    top:0%;
 }
 
 .portFiltroDrop{
-    left:19%;
     position:absolute;
-    top:-5%;
+    left:30%;
 }
 
 
