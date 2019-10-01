@@ -2,7 +2,6 @@ document.addEventListener("scroll", function() {
 
     var cont1 = document.getElementById("conteudo1");
     var cont2 = document.getElementById("conteudo2");
-    var cont3 = document.getElementById("conteudo3");
 
     var ALTURA = window.innerHeight;
     var LARGURA = window.innerWidth;
@@ -12,8 +11,6 @@ document.addEventListener("scroll", function() {
         cont1.className += " acao";
     if (scrollY + ALTURA > cont2.offsetTop)
         cont2.className += " acao";
-    if (scrollY + ALTURA > cont3.offsetTop)
-        cont3.className += " acao";
 
 })
 
