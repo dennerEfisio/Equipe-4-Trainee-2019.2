@@ -1,7 +1,15 @@
 .navFont {
-    font-size: 24px;
+    font-size: 36px;
     animation-name: navbar-top;
     animation-duration: 1.5s;
+}
+
+.navFont a {
+    color: white !important;
+}
+
+.navFont a:hover {
+    color: #F6AE2D !important;
 }
 
 .linkLogin {
@@ -11,14 +19,14 @@
     text-align: center;
     background: transparent;
     border: 0;
+    right: 0;
+    color: white;
 }
 
 .navbar-color {
-    background-image: linear-gradient(to right, #1d434e, #1d434e, #86BBD8);
-}
-
-.navbar-color {
-    background-image: linear-gradient(to right, #1d434e, #1d434e, #86BBD8);
+    position: relative;
+    background: transparent;
+    width: 100%;
 }
 
 .titulo-modal {
@@ -110,11 +118,13 @@
 }
 
 .parallax1 {
-    background-color: #86BBD8;
-    color: black;
+    background-image: url(../imgs/teatro1.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
     width: 100%;
-    padding: 15%;
-    text-align: center;
 }
 
 .parallax1 h1 {
@@ -122,6 +132,22 @@
 }
 
 .parallax1 p {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.parallax2 {
+    background-color: #86BBD8;
+    color: black;
+    width: 100%;
+    text-align: center;
+}
+
+.parallax2 h1 {
+    font-size: 72px;
+}
+
+.parallax2 p {
     font-size: 24px;
     font-weight: 400;
 }
@@ -155,44 +181,8 @@
     animation-duration: 0.5s;
 }
 
-.parallax2 {
-    background-image: url(../imgs/teatro.jpg);
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    color: white;
-    padding: 15%;
-    text-align: center;
-    width: 100%;
-}
-
-.parallax2 h1 {
-    font-size: 72px;
-}
-
-.parallax2 p {
-    font-size: 24px;
-    font-weight: 400;
-}
-
-.parallax3 {
-    color: black;
-    padding: 15%;
-    text-align: center;
-    width: 100%;
-}
-
-.parallax3 h1 {
-    font-size: 72px;
-}
-
-.parallax3 p {
-    font-size: 24px;
-    font-weight: 400;
-}
-
 .conteudo {
+    padding: 15%;
     position: relative;
     opacity: 0;
 }
@@ -201,6 +191,7 @@
     opacity: 1;
     animation-name: texto-parallax;
     animation-duration: 1s;
+    text-align: center;
 }
 
 @media (max-width:1000px) {

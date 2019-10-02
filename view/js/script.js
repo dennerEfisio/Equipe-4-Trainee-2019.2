@@ -1,18 +1,14 @@
+document.getElementById("conteudo1").className += " acao";
+
 document.addEventListener("scroll", function() {
-
-    var cont1 = document.getElementById("conteudo1");
-    var cont2 = document.getElementById("conteudo2");
-
+    var cont2 = document.getElementById("conteudo2")
     var ALTURA = window.innerHeight;
-    var LARGURA = window.innerWidth;
 
-
-    if (scrollY + ALTURA > cont1.offsetTop)
-        cont1.className += " acao";
-    if (scrollY + ALTURA > cont2.offsetTop)
+    if (scrollY + ALTURA > cont2.offsetTop) {
         cont2.className += " acao";
-
+    }
 })
+
 
 function descricaoSlide() {
 
