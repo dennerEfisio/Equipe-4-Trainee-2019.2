@@ -4,13 +4,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/styleQS.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Raleway', sans-serif;
+        }
+    </style>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-xl navbar-dark navbar-color">
+        <a class="navbar-brand" href="#">
+            <img src="img/Felipe_Peças.png" width="150">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <spam class="navbar-toggler-icon"></spam>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav navFont">
+                <li class="nav-item mr-3 ml-3">
+
+                    <a class="nav-link text-center" href="#">Início</a>
+
+                </li>
+
+                <li class="nav-item mr-3 ml-3">
+
+                    <a class="nav-link text-center" href="#">Espetáculos</a>
+
+                </li>
+
+                <li class="nav-item mr-3 ml-3">
+
+                    <a class="nav-link text-center" href="#">Quem Somos</a>
+
+                </li>
+
+                <li class="nav-item mr-3 ml-3">
+
+                    <a class="nav-link text-center" href="#">Contatos</a>
+
+                </li>
+
+            </ul>
+            <div class="navbar-nav ml-auto">
+                <button type="button" class="ml-4 mr-4 align-self-center linkLogin" data-toggle="modal"
+                    data-target="#myModal">Login</button>
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header titulo-modal">
+                                <button type="button" class="close fechar" data-dismiss="modal">&#9747;</button>
+                                <h3 class="modal-title">Login</h3>
+                                <hr>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="email">Email:</label>
+                                        <input type="text" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="senha">Senha:</label>
+                                        <input type="password" class="form-control" id="senha" required>
+                                    </div>
+                                    <div class="botao" tabindex="0">
+                                        <button type="submit" class="btn btn-primary botaoModal">Login</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </nav>
+
     <div class="container main">
         <div class="titulo-imagem">
             <h1>Quem Somos</h1>
@@ -35,28 +114,30 @@
             <hr>
         </div>
         <div class="titulo-imagem">
-                <h2>Nossa Missão</h2>
-                <hr>
-            </div>
-            <div class="texto-imagem">
-                <h4 class="texto">
-                    <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar purus cursus, iaculis urna sit amet, euismod quam. Donec sed dictum nunc. Etiam id mauris. 
-                    </p>
-                </h4>
-                <hr>
-            </div>
-            <div class="titulo-imagem">
-                <h2>Nossos Valores e Visões</h2>
-                <hr>
-            </div>
-            <div class="texto-imagem">
-                <h4 class="texto">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet justo non lectus fermentum, ut lobortis purus fringilla. Praesent nisi lacus, ullamcorper nec dui vitae.
-                    </p>
-                </h4>
-            </div>
+            <h2>Nossa Missão</h2>
+            <hr>
+        </div>
+        <div class="texto-imagem">
+            <h4 class="texto">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar purus cursus, iaculis urna
+                    sit amet, euismod quam. Donec sed dictum nunc. Etiam id mauris.
+                </p>
+            </h4>
+            <hr>
+        </div>
+        <div class="titulo-imagem">
+            <h2>Nossos Valores e Visões</h2>
+            <hr>
+        </div>
+        <div class="texto-imagem">
+            <h4 class="texto">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet justo non lectus fermentum,
+                    ut lobortis purus fringilla. Praesent nisi lacus, ullamcorper nec dui vitae.
+                </p>
+            </h4>
+        </div>
         <div class="row">
             <div class="container container-fotos col-sm-4">
                 <img src="img/foto1.jpg" alt="Fulano" class="image">
@@ -104,6 +185,8 @@
     </div>
     </div>
 
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
