@@ -1,5 +1,5 @@
 .navFont {
-    font-size: 36px;
+    font-size: 30px;
     animation-name: navbar-top;
     animation-duration: 1.5s;
 }
@@ -123,17 +123,18 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    color: white;
     width: 100%;
 }
 
 .parallax1 h1 {
     font-size: 72px;
+    color: white;
 }
 
 .parallax1 p {
     font-size: 24px;
     font-weight: 400;
+    color: white;
 }
 
 .parallax2 {
