@@ -1,7 +1,48 @@
-.navFont {
+.parallax1 {
+    background-image: url(../imgs/teatro1.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+.parallax1 h1 {
+    font-size: 72px;
+    color: white;
+}
+
+.parallax1 p {
     font-size: 24px;
+    font-weight: 400;
+    color: white;
+}
+
+.conteudo {
+    padding: 15%;
+    position: relative;
+    opacity: 0;
+}
+
+.acao {
+    opacity: 1;
+    animation-name: texto-parallax;
+    animation-duration: 1s;
+    text-align: center;
+}
+
+.navFont {
+    font-size: 30px;
     animation-name: navbar-top;
     animation-duration: 1.5s;
+}
+
+.navFont a {
+    color: white !important;
+}
+
+.navFont a:hover {
+    color: #F6AE2D !important;
 }
 
 .linkLogin {
@@ -11,22 +52,22 @@
     text-align: center;
     background: transparent;
     border: 0;
+    right: 0;
+    color: white;
 }
 
 .navbar-color {
-    background-image: linear-gradient(to right, #1d434e, #1d434e, #86BBD8);
+    position: relative;
+    background: transparent;
+    width: 100%;
 }
 
-.navbar-color {
-    background-image: linear-gradient(to right, #1d434e, #1d434e, #86BBD8);
-}
-
-.titulo-modal{
+.titulo-modal {
     background-color: #F6AE2D;
     padding-left: 40%;
 }
 
-.titulo-modal h3{
+.titulo-modal h3 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     color: white;
@@ -44,10 +85,10 @@
     color: rgb(255, 255, 255);
     font-family: 'Relaway', sans-serif;
     cursor: pointer;
-    box-shadow: 0 4px 4px 0 rgba (0,0,0, .3);
+    box-shadow: 0 4px 4px 0 rgba (0, 0, 0, .3);
 }
 
-.modal-body{
+.modal-body {
     padding: 7%;
 }
 
@@ -62,7 +103,7 @@
     }
 }
 
-.botaoModal{
+.botaoModal {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     color: white;
@@ -72,21 +113,21 @@
     display: block;
 }
 
-.botaoModal:hover{
+.botaoModal:hover {
     color: black;
     background: #F6AE2D !important;
     outline: none;
     border: none;
 }
 
-.botaoModal:focus{
+.botaoModal:focus {
     color: black;
     background: #F26419 !important;
     outline: none;
     border: none;
 }
 
-.botaoModal:active{
+.botaoModal:active {
     color: black;
     background: #F26419 !important;
     outline: none;
@@ -98,7 +139,6 @@
         opacity: 0;
         transform: translate3d(0, -60px, 0);
     }
-
     to {
         opacity: 1;
         transform: translate3d(0, 0, 0)
@@ -108,4 +148,15 @@
 .modal.fade {
     animation-name: modal;
     animation-duration: 1s;
+}
+
+@keyframes texto-parallax {
+    0% {
+        opacity: 0;
+        transform: translate(100px, 0px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
 }
