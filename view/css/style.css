@@ -158,6 +158,18 @@
     background-color: white;
 }
 
+.transicao {
+    width: 100%;
+    background-image: linear-gradient(#86BBD8, #1d434e, black);
+    height: 80px;
+}
+
+.transicaoFinal {
+    width: 100%;
+    background-image: linear-gradient( black, #1d434e, #86BBD8);
+    height: 80px;
+}
+
 .textoCarousel {
     animation-name: texto-parallax;
     animation-duration: 1s;
