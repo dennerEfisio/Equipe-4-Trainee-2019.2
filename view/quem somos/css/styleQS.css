@@ -9,7 +9,7 @@
 
     font-size: 60px;
     font-weight: 600;
-    color: #33658A;
+    color: white ;
 
     animation-name: deslize;
     animation-duration: 3s;
@@ -20,7 +20,7 @@
 
     font-size: 42px;
     font-weight: 700;
-    color: #33658A;
+    color: white !important;
     margin-top: 1%;
     margin-bottom: 1%;
 
@@ -32,7 +32,7 @@
     font-family: 'Raleway', sans-serif;
 
     text-align: justify;
-    color: black;
+    color: #e0dcdc !important;
     font-weight: 300;
     font-size: 24px;
 
@@ -41,8 +41,9 @@
 }
 
 .main {
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 5% !important;
+    margin-bottom: 5% !important;
+    margin: 0 auto;
 }
 
 .fotos {
@@ -125,7 +126,7 @@
 @media screen and (max-width: 800px) {
 
     .titulo-imagem h1{
-        font-size: 28px;
+        font-size: 28px !important;
     }
 
     .titulo-imagem h2{
@@ -133,7 +134,7 @@
     }
 
     .texto {
-        font-size: 18px;
+        font-size: 18px !important;
     }
 
     .container-fotos{
@@ -154,116 +155,4 @@
         font-size: 14px;
     }
 
-}
-
-.navFont {
-    font-size: 24px;
-    animation-name: navbar-top;
-    animation-duration: 1.5s;
-}
-
-.linkLogin {
-    position: relative;
-    padding: 10px;
-    border-radius: 30%;
-    text-align: center;
-    background: transparent;
-    border: 0;
-}
-
-.navbar-color {
-    background-image: linear-gradient(to right, #1d434e, #1d434e, #86BBD8);
-}
-
-.navbar-color {
-    background-image: linear-gradient(to right, #1d434e, #1d434e, #86BBD8);
-}
-
-.titulo-modal{
-    background-color: #F6AE2D;
-    padding-left: 40%;
-}
-
-.titulo-modal h3{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    color: white;
-    font-size: 30px;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.fechar {
-    position: absolute;
-    top: 18px;
-    right: 20px;
-    width: 48px;
-    height: 45px;
-    color: rgb(255, 255, 255);
-    font-family: 'Relaway', sans-serif;
-    cursor: pointer;
-    box-shadow: 0 4px 4px 0 rgba (0,0,0, .3);
-}
-
-.modal-body{
-    padding: 7%;
-}
-
-@keyframes navbar-top {
-    0% {
-        opacity: 0;
-        margin-left: 10%;
-    }
-    100% {
-        opacity: 1;
-        margin-left: 0;
-    }
-}
-
-.botaoModal{
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    color: white;
-    background: #F6AE2D;
-    border: none;
-    margin: 0 auto;
-    display: block;
-}
-
-.botaoModal:hover{
-    color: black;
-    background: #F6AE2D !important;
-    outline: none;
-    border: none;
-}
-
-.botaoModal:focus{
-    color: black;
-    background: #F26419 !important;
-    outline: none;
-    border: none;
-}
-
-.botaoModal:active{
-    color: black;
-    background: #F26419 !important;
-    outline: none;
-    border: none;
-}
-
-@keyframes modal {
-    from {
-        opacity: 0;
-        transform: translate3d(0, -60px, 0);
-    }
-
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0)
-    }
-}
-
-.modal.fade {
-    animation-name: modal;
-    animation-duration: 1s;
 }
