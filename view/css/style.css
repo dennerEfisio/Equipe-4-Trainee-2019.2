@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .navFont {
     font-size: 30px;
     animation-name: navbar-top;
@@ -247,6 +248,8 @@
     }
 }
 
+=======
+>>>>>>> footer
 .footer {
     width: 100%;
     height: auto;
@@ -256,6 +259,11 @@
     background-color: #1d434e;
     color: white;
     padding-top: 1%;
+<<<<<<< HEAD
+=======
+    position: absolute;
+    bottom: 0;
+>>>>>>> footer
 }
 
 .redes {
