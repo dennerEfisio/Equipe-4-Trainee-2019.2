@@ -1,6 +1,8 @@
 
 .portBody{
-	background-color: black;
+	background-image:url(../imagens/teatro.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 	font-family: 'Raleway', sans-serif;
     animation-name: inicio;
     animation-duration: 6s;
