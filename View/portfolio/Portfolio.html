@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -14,13 +15,12 @@
     <title>Portfólio</title>
   </head>
   <body class="portBody">
-
-    <div><h1 class="portTitulo">Portfólio</h1></div>
+  	<h1 class="portTitulo">Portfólio</h1>
 
     <div class="portContainerCarrossel row">
         <div class="portCarrosselDest col-sm-3">
-            <h1 id="palavraDest">Destaque:</h1> 
-            <h2 id="nomeDest">Hermanoteu na Terra de  Godah</h2>
+            <h2 class="palavraDest">Destaque:</h2> 
+            <h3 class="nomeDest">Hermanoteu na Terra de  Godah</h3>
             <button type="button" class="portCarrosselInfo btn" data-toggle="modal" data-target="#portModal">Saiba Mais</button>
         </div>
         <div id="portCarrossel" class=" portCarrossel carousel slide col-sm-9" data-ride="carousel">
@@ -47,8 +47,8 @@
 </div>
 
 <div class="portFiltro">
-    <form class="form-inline">
-	     <div class="dropdown portFiltroDrop">
+    <form class="form-inline row">
+	     <div class="dropdown portFiltroDrop col-sm-4">
 	        <button type="button" class="btn portFiltroBuscaBotao dropdown-togglec" data-toggle="dropdown">
 	          Filtragem por....
 	        </button>
@@ -63,8 +63,8 @@
 		        <a class="dropdown-item" href="#">Teste 3</a>
 	        </div>
 	    </div>
-	    <div class="portFiltroBusca">
-		    <input class="form-control" type="search" placeholder="Pesquise por Peças aqui..." aria-label="Search">
+	    <div class="portFiltroBusca col-sm-4">
+		    <input class="form-control" type="search" placeholder="Pesquise aqui..." aria-label="Search">
 		    <button class=" portFiltroBuscaBotao btn" type="submit">Search</button>
 		</div>
   	</form>
@@ -130,7 +130,6 @@
     </div>
   </div>
 </div>
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
