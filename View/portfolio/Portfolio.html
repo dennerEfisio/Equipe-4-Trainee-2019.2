@@ -4,17 +4,86 @@
     <!-- Meta tags Obrigatórias -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,400&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <script src="js/portfolio.js"></script>
-
     <title>Portfólio</title>
   </head>
   <body class="portBody">
+    <nav class="navbar navbar-expand-xl navbar-dark navbar-color">
+            <a class="navbar-brand" href="#">
+                <img src="imgs/Felipe_Pecas.png" width="200">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+            <spam class="navbar-toggler-icon"></spam>
+        </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav navFont">
+                    <li class="nav-item mr-3 ml-3">
+
+                        <a class="nav-link text-center" href="#">Início</a>
+
+                    </li>
+
+                    <li class="nav-item mr-3 ml-3">
+
+                        <a class="nav-link text-center" href="#">Espetáculos</a>
+
+                    </li>
+
+                    <li class="nav-item mr-3 ml-3">
+
+                        <a class="nav-link text-center" href="#">Quem Somos</a>
+
+                    </li>
+
+                    <li class="nav-item mr-3 ml-3">
+
+                        <a class="nav-link text-center" href="#">Contatos</a>
+
+                    </li>
+
+                </ul>
+                <div class="navbar-nav ml-auto">
+                    <button type="button" class="ml-4 mr-4 align-self-center linkLogin" data-toggle="modal" data-target="#myModal">Login</button>
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header titulo-modal">
+                                    <button type="button" class="close fechar" data-dismiss="modal">&#9747;</button>
+                                    <h3 class="modal-title">Login</h3>
+                                    <hr>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="email">Email:</label>
+                                            <input type="text" class="form-control" id="email" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="senha">Senha:</label>
+                                            <input type="password" class="form-control" id="senha" required>
+                                        </div>
+                                        <div class="botao" tabindex="0">
+                                            <button type="submit" class="btn btn-primary botaoModal">Login</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </nav>
   	<h1 class="portTitulo">Portfólio</h1>
 
     <div class="portContainerCarrossel row">
@@ -26,13 +95,13 @@
         <div id="portCarrossel" class=" portCarrossel carousel slide col-sm-9" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="portCarrosselImg" src="imagens/imgCar.png">
+                    <img class="portCarrosselImg" src="imgs/imgCar.png">
                 </div>
                 <div class="carousel-item">
-                    <img class="portCarrosselImg" src="imagens/imgCar2.png">
+                    <img class="portCarrosselImg" src="imgs/imgCar2.png">
                 </div>
                 <div class="carousel-item">
-                    <img class="portCarrosselImg" src="imagens/imgCar3.png">
+                    <img class="portCarrosselImg" src="imgs/imgCar3.png">
                 </div>
       </div>
   
@@ -48,21 +117,6 @@
 
 <div class="portFiltro">
     <form class="form-inline row">
-	     <div class="dropdown portFiltroDrop col-sm-4">
-	        <button type="button" class="btn portFiltroBuscaBotao dropdown-togglec" data-toggle="dropdown">
-	          Filtragem por....
-	        </button>
-	        <div class="dropdown-menu">
-		        <h5 class="dropdown-header">Gênero</h5>
-		        <a class="dropdown-item" href="#">Teste 1</a>
-		        <a class="dropdown-item" href="#">Teste 2</a>
-		        <a class="dropdown-item" href="#">Teste 3</a>
-		        <h5 class="dropdown-header">Classificação</h5>
-		        <a class="dropdown-item" href="#">Teste 1</a>
-		        <a class="dropdown-item" href="#">Teste 2</a>
-		        <a class="dropdown-item" href="#">Teste 3</a>
-	        </div>
-	    </div>
 	    <div class="portFiltroBusca col-sm-4">
 		    <input class="form-control" type="search" placeholder="Pesquise aqui..." aria-label="Search">
 		    <button class=" portFiltroBuscaBotao btn" type="submit">Search</button>
@@ -74,37 +128,37 @@
 <div class="portContainerCards">
     <div class="row">
             <div class="container portCard col-sm-4">
-                <img src="imagens/img1.jpg" alt="Peça de teatro" class="portCardImg">
+                <img src="imgs/img1.jpg" alt="Peça de teatro" class="portCardImg">
                 <div class="portDestaque"></div>
                 <div class="portCardNomePeca">Nome da Peça</div>
                 <button type="button" class="portCardInfo btn" data-toggle="modal" data-target="#portModal">Saiba Mais</button>
             </div>
             <div class="container portCard col-sm-4">
-                <img src="imagens/img2.jpg" alt="Peça de teatro" class="portCardImg">
+                <img src="imgs/img2.jpg" alt="Peça de teatro" class="portCardImg">
                 <div class="portDestaque"></div>
                 <div class="portCardNomePeca">Nome da Peça</div>
                 <button type="button" class="portCardInfo btn" data-toggle="modal" data-target="#portModal">Saiba Mais</button>
             </div>
             <div class="container portCard col-sm-4">
-                <img src="imagens/img3.jpg" alt="Peça de teatro" class="portCardImg">
+                <img src="imgs/img3.jpg" alt="Peça de teatro" class="portCardImg">
                 <div class="portDestaque"></div>
                 <div class="portCardNomePeca">Nome da Peça</div>
                 <button type="button" class="portCardInfo btn" data-toggle="modal" data-target="#portModal">Saiba Mais</button>
             </div>
             <div class="container portCard col-sm-4">
-                <img src="imagens/img4.jpg" alt="Peça de teatro" class="portCardImg">
+                <img src="imgs/img4.jpg" alt="Peça de teatro" class="portCardImg">
                 <div class="portDestaque"></div>
                 <div class="portCardNomePeca">Nome da Peça</div>
                 <button type="button" class="portCardInfo btn" data-toggle="modal" data-target="#portModal">Saiba Mais</button>
             </div>
             <div class="container portCard col-sm-4">
-                <img src="imagens/img5.jpg" alt="Peça de teatro" class="portCardImg">
+                <img src="imgs/img5.jpg" alt="Peça de teatro" class="portCardImg">
                 <div class="portDestaque"></div>
                 <div class="portCardNomePeca">Nome da Peça</div>
                 <button type="button" class="portCardInfo btn" data-toggle="modal" data-target="#portModal">Saiba Mais</button>
             </div>
             <div class="container portCard col-sm-4">
-                <img src="imagens/img6.jpg" alt="Peça de teatro" class="portCardImg">
+                <img src="imgs/img6.jpg" alt="Peça de teatro" class="portCardImg">
                 <div class="portDestaque"></div>
                 <div class="portCardNomePeca">Nome da Peça</div>
                 <button type="button" class="portCardInfo btn" data-toggle="modal" data-target="#portModal">Saiba Mais</button>
@@ -125,11 +179,31 @@
       <div class="portModalBody modal-body">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id tristique urna. Donec gravida tincidunt sapien sit amet vehicula. Nam lobortis lacus in pretium feugiat. Nam et fringilla orci. Aenean gravida, lorem sit amet ornare lacinia, lacus sapien vulputate massa, non ultrices nunc erat eget odio. Fusce ac augue eu neque rhoncus cursus sed a est. Nunc eu ipsum tortor. Etiam quis eros hendrerit purus congue volutpat. Duis lobortis, velit et luctus porttitor, arcu ligula tincidunt mauris, commodo tincidunt dui tortor ac tellus. Curabitur quis turpis egestas, lobortis risus non, cursus massa. Sed a porta dui.</p>
       </div>
-      <div class="portModalFooter modal-footer">
-      </div>
     </div>
   </div>
 </div>
+
+<div class="footer">
+        <div class="copyright">
+            <p>@copyright Code Jr</p>
+        </div>
+        <div class="redes">
+            <ul>
+                <li>
+                    <a href="#"><img src="imgs/facebook.png" width="30"> </a>
+                </li>
+                <li>
+                    <a href="#"><img src="imgs/instagram.png" width="30"> </a>
+                </li>
+                <li>
+                    <a href="#"><img src="imgs/twitter.png" width="30"> </a>
+                </li>
+                <li>
+                    <a href="#"><img src="imgs/youtube.png" width="30"> </a>
+                </li>
+            </ul>
+</div>
+    <script src="js/portfolio.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
