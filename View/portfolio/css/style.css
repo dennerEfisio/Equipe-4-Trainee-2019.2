@@ -231,10 +231,91 @@
 }
 
 .portCarrosselLado{
-	display: block;
-	background-color: red;
+	display:flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.portCarrosselTexto{
+	margin:0 auto;
+	text-align: center;
+}
+
+.portCarrosselTexto h2{
+	color:#F6AE2D;
+	text-align: center;
+}
+
+.portCarrosselTexto h3{
+	color:white;
 }
 
 .portCarrosselBotao{
-	
+	margin:0 auto;
+	color:white;
+	background: #F6AE2D;
 }
+
+.portCarrosselBotao:hover{
+    color: black;
+    background: #F6AE2D;
+    outline: 0;
+    box-shadow: 0 0 0 3px rgba(246,174,45,0.7);  
+}
+
+.portCarrosselBotao:focus,.portCarrosselBotao:active  {
+    color: black;
+    background: #F26419;
+    outline: 0;
+    box-shadow: 0 0 0 3px rgba(246,174,45,0.7);
+}
+
+
+.portPesquisa{
+	display: flex;
+	justify-content: center;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	border-top:1px solid rgba(255,255,255,0.3) ;
+	padding-top: 2%;
+}
+
+.portPesquisaBotao{
+	background-color: #F6AE2D;
+	color:white;
+	margin:5px auto;
+}
+
+.portPesquisaBotao:hover{
+    color: black;
+    background: #F6AE2D;
+    outline: 0;
+    box-shadow: 0 0 0 3px rgba(246,174,45,0.7);  
+}
+
+.portPesquisaBotao:focus,.portPesquisaBotao:active {
+    color: black;
+    background: #F26419;
+    outline: 0;
+    box-shadow: 0 0 0 3px rgba(246,174,45,0.7);
+}
+
+/* ----------------------------------------------Card-------------------------------------------------- */
+.portVariosCards{
+    border-top:1px solid rgba(255,255,255,0.3);
+}
+
+.portCard{
+    margin:3% 0 0 0;
+}
+.portCardImg{
+    width:100%;
+    height:100%;
+}
+
+.portSpan{
+    background-color: red;
+    width:100%;
+    height:100%;
+}
+
