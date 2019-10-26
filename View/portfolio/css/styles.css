@@ -224,6 +224,10 @@
 
 /*-------------------------------------------------------STYLE PORTFOLIO MESMO-----------------------------------------------------*/
 
+.portCarrossel{
+    border-top:1px solid rgba(255,255,255,0.3);
+    padding-top: 2%;
+}
 .portCarrosselImg{
 	width:100%;
 	height:450px;
@@ -242,12 +246,15 @@
 }
 
 .portCarrosselTexto h2{
-	color:#F6AE2D;
-	text-align: center;
+    font-size:350%;
+	color:#F26419;
+    animation-name: portanimacao;
+    animation-duration: 1.5s;
 }
 
 .portCarrosselTexto h3{
 	color:white;
+    font-size:250%;
 }
 
 .portCarrosselBotao{
@@ -300,22 +307,118 @@
     box-shadow: 0 0 0 3px rgba(246,174,45,0.7);
 }
 
+@keyframes portanimacao {
+    0% {
+        opacity: 0;
+        margin-left: 15%;
+    }
+    100% {
+        opacity: 1;
+        margin-left: 0;
+    }
+}
 /* ----------------------------------------------Card-------------------------------------------------- */
 .portVariosCards{
     border-top:1px solid rgba(255,255,255,0.3);
+    margin-bottom: 3%;
 }
 
 .portCard{
     margin:3% 0 0 0;
 }
+
 .portCardImg{
     width:100%;
     height:100%;
+    opacity: 1;
 }
 
 .portSpan{
-    background-color: red;
+    background-color:#1d434e;
     width:100%;
     height:100%;
+    border:3px ridge #F6AE2D;
+}
+
+.portSpan:hover{
+    border:3px ridge #F26419;
+}
+
+.portSpan:hover .portCardNomePeca, .portSpan:hover .portCardBotao{
+    animation-name: portanimacao;
+    animation-duration: 1.5s;
+    opacity: 1;
+}
+
+.portSpan:hover .portCardImg{
+    opacity: 0.3;
+}
+
+.portCardNomePeca{
+    position: absolute;
+    top: 0%;
+    width: 50%;
+    left: 25%;
+    margin:3% 0;
+    color: white;
+    text-align: center;
+    font-size:150%;
+    font-weight: 500;
+    opacity: 0;
+}
+
+.portCardBotao{
+    position: absolute;
+    bottom: 0%;
+    background-color: #F6AE2D;
+    color:white;
+    width: 30%;
+    left: 35%;
+    margin:3% 0;
+    opacity: 0;
+}
+
+.portCardBotao:hover{
+    color: black;
+    background: #F6AE2D;
+    outline: 0;
+    box-shadow: 0 0 0 3px rgba(246,174,45,0.7);  
+}
+
+.portCardBotao:focus,.portPesquisaBotao:active {
+    color: black;
+    background: #F26419;
+    outline: 0;
+    box-shadow: 0 0 0 3px rgba(246,174,45,0.7);
+}
+
+/*-----------------------------------------------------Modal Card----------------------------------------------------------*/
+
+.portModal{
+    font-family: 'Raleway', sans-serif;
+}
+
+.portModalHead{
+    background-color: #F6AE2D;
+    color:white;
+    text-transform: uppercase;
+    font-size: 160%;
+}
+
+.portModalTitulo{
+    width:50%;
+    text-align:center !important;
+    margin-left: 25% !important;
+}
+
+.portModalBody{
+    text-align:center !important;
+    background-color: white;
+    color:black;
+    font-size:110%;
+}
+
+.portModalBotao {
+    text-align: right !important;
 }
 
