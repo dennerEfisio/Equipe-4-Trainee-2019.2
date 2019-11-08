@@ -247,6 +247,129 @@
     }
 }
 
+.contatoBotao {
+    text-align: center !important;
+    background: transparent;
+    border: none !important;
+    color: white;
+}
+
+.parallax1 p {
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+}
+
+.parallax2 {
+    background-color: #86BBD8;
+    color: black;
+    width: 100%;
+    text-align: center;
+}
+
+.parallax2 h1 {
+    font-size: 72px;
+}
+
+.parallax2 p {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.produtosHome {
+    width: 100%;
+    background-color: white;
+}
+
+.transicao {
+    width: 100%;
+    background-image: linear-gradient(#86BBD8, #1d434e, black);
+    height: 80px;
+}
+
+.transicaoFinal {
+    width: 100%;
+    background-image: linear-gradient( black, #1d434e, #86BBD8);
+    height: 80px;
+}
+
+.textoCarousel {
+    animation-name: texto-parallax;
+    animation-duration: 1s;
+}
+
+.textoCarousel h5 {
+    font-size: 32px;
+}
+
+.textoCarousel p {
+    font-size: 24px;
+}
+
+.descricao {
+    display: none;
+}
+
+.mostraTexto {
+    position: relative;
+    display: block;
+    animation-name: descricao-slide;
+    animation-duration: 0.5s;
+}
+
+.conteudo {
+    padding: 15%;
+    position: relative;
+    opacity: 0;
+}
+
+.acao {
+    opacity: 1;
+    animation-name: texto-parallax;
+    animation-duration: 1s;
+    text-align: center;
+}
+
+@media (max-width:1000px) {
+    .parallax1 p {
+        font-size: 30px;
+    }
+    .parallax2 p {
+        font-size: 30px;
+    }
+    .parallax3 p {
+        font-size: 30px;
+    }
+    .textoCarousel p {
+        display: none;
+    }
+    .textoCarousel a {
+        display: none;
+    }
+}
+
+@keyframes texto-parallax {
+    0% {
+        opacity: 0;
+        transform: translate(100px, 0px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes descricao-slide {
+    0% {
+        opacity: 0;
+        transform: translate(0px, 10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
 .footer {
     width: 100%;
     height: auto;
@@ -256,6 +379,7 @@
     background-color: #1d434e;
     color: white;
     padding-top: 1%;
+    position: relative;
 }
 
 .redes {
@@ -268,4 +392,160 @@
 
 .copyright {
     margin-left: 5%;
+}
+.alinhamento{
+    display:flex;
+    height:100vh;
+    flex-direction:column;
+}
+
+.cont{
+    flex:1;
+}
+
+.linkMenuAlter{
+    text-decoration: none;
+    color:black;
+}
+
+.titulo-imagem {
+    text-align: center;
+}
+
+.titulo-imagem h1{
+    font-family: 'Raleway', sans-serif;
+
+    font-size: 60px;
+    font-weight: 600;
+    color: white ;
+
+    animation-name: deslize;
+    animation-duration: 3s;
+}
+
+.titulo-imagem h2{
+    font-family: 'Raleway', sans-serif;
+
+    font-size: 42px;
+    font-weight: 700;
+    color: white !important;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+    animation-name: deslize;
+    animation-duration: 3s;
+}
+
+.texto {
+    font-family: 'Raleway', sans-serif;
+
+    text-align: justify;
+    color: #e0dcdc !important;
+    font-weight: 300;
+    font-size: 24px;
+
+    animation-name: fade;
+    animation-duration: 4s;
+}
+
+.main {
+    margin-top: 5% !important;
+    margin-bottom: 5% !important;
+    margin: 0 auto;
+}
+
+.fotos {
+    border: none;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.container-fotos {
+    width: 50%;
+    margin-bottom: 1%;
+    margin-top: 2%;
+
+    animation-name: fade;
+    animation-duration: 6s;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 96.5%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #1d434e;
+    margin-right: -3.5%;
+}
+
+.container-fotos:hover .overlay {
+    opacity: 0.8;
+}
+
+.text-card {
+    font-family: 'Raleway', sans-serif;
+
+    color: #F6AE2D;
+    font-size: 20px;
+    text-transform: uppercase;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-card-info {
+    font-family: 'Raleway', sans-serif;
+
+    color: white;
+    font-size: 16px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.tabela{
+    width:100%;
+    padding:10px;
+
+}
+
+.linha{
+    padding:10px;
+
+}
+
+.tituloTabela{
+    padding: 10px;
+    font-size:20px;
+    text-align:center;
+    border:1px solid black;
+
+}
+
+.conteudoTabela{
+    padding:10px;
+    border:1px solid black;
+    font-size:16px;
+
+}
+
+.botoes{
+    text-align:center;
 }
