@@ -1,3 +1,3 @@
 <div class="base-rodape">
-		<p>______________________</p>
+		    <p>DIREITOS RESERVADOS MJAILTON.COM.BR</p>
 </div>	

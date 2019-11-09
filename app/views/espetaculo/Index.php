@@ -1,77 +1,41 @@
 <div class="base-home">
+			<a href="<?php echo URL_BASE."espetaculo/novo" ?>" class="btn" style="width:17%">Cadastrar Novo</a>
 			<h1 class="titulo"><span class="cor">Lista de</span> contatos</h1>
 		<div class="base-lista">
-			<span class="qtde"><b>18</b> clientes cadastrados</span>
+			<span class="qtde"><b><?php echo count($espetaculos)?></b> clientes cadastrados</span>
 			<div class="tabela">	
 				<table width="100%" border="0" cellspacing="0" cellpadding="0">
 				  <thead>
 					   <tr>
-						<th width="25%" align="left">Nome</th>
-						<th width="25%" align="left">Email</th>
-						<th width="10%" align="left">Telefone</th>
-						<th width="20%" colspan="2" align="center">Alterar</th>
+						<th>Nome</th>
+						<th>Local id</th>
+						<th>Categoria id</th>
+						<th colspan="2" align="center">Alterar</th>
 					  </tr>
 				  </thead>
 				  <tbody>
+				  	<?php foreach($espetaculos as $espetaculo){ ?>
 					 <tr class="cor1">
-						<td>Manoel Jailton Nascimento</td>
-						<td>mjailton @gmail.com</td>
-						<td>335550221</td>
-						<td align="center">
-							<a href="index.php?link=2" class="btn">Editar</a>
+						<td><?php echo $espetaculo->nome?></td>
+						<td><?php echo $espetaculo->local_id?></td>
+						<td><?php echo $espetaculo->categoria_id?></td>
+						<!-- <td align="center">
+							<a href="<?php echo URL_BASE."espetaculo/edit/".$espetaculo->id ?>" class="btn">Editar</a>
 						</td>
 						<td align="center">
-							<a href="index.php?link=2" class="btn excluir">excluir</a>
-						</td>
-					 </tr>	
-				  <tbody>
-					 <tr class="cor2">
-						<td>Manoel Jailton Nascimento</td>
-						<td>mjailton @gmail.com</td>
-						<td>335550221</td>
+							<a href="<?php echo URL_BASE."espetaculo/delete/".$espetaculo->id ?>" class="btn excluir">excluir</a>
+						</td> -->
 						<td align="center">
-							<a href="index.php?link=2" class="btn">Editar</a>
+							<a href="<?php echo URL_BASE."espetaculo/delete/".$espetaculo->id ?>" class="btn excluir">Ver mais</a>
 						</td>
-						<td align="center">
-							<a href="index.php?link=2" class="btn excluir">excluir</a>
-						</td>
-					 </tr>	
-					 <tr class="cor1">
-						<td>Manoel Jailton Nascimento</td>
-						<td>mjailton @gmail.com</td>
-						<td>335550221</td>
-						<td align="center">
-							<a href="index.php?link=2" class="btn">Editar</a>
-						</td>
-						<td align="center">
-							<a href="index.php?link=2" class="btn excluir">excluir</a>
-						</td>
-					 </tr>		
-					 <tr class="cor2">
-						<td>Manoel Jailton Nascimento</td>
-						<td>mjailton @gmail.com</td>
-						<td>335550221</td>
-						<td align="center">
-							<a href="index.php?link=2" class="btn">Editar</a>
-						</td>
-						<td align="center">
-							<a href="index.php?link=2" class="btn excluir">excluir</a>
-						</td>
+
 					 </tr>
-					 <tr class="cor1">
-						<td>Manoel Jailton Nascimento</td>
-						<td>mjailton @gmail.com</td>
-						<td>335550221</td>
-						<td align="center">
-							<a href="index.php?link=2" class="btn">Editar</a>
-						</td>
-						<td align="center">
-							<a href="index.php?link=2" class="btn excluir">excluir</a>
-						</td>
-					 </tr>										  
+					  <?php } ?>
+						
+				  										  
 				  </tbody>
 				</table>
-		    </div>					
+		</div>					
 				
 		</div>	
 </div>	

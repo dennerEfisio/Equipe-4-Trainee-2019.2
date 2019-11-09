@@ -6,8 +6,8 @@ require 'vendor/autoload.php';
 $core = new Core;
 $core->run();
 
-
-/*echo "contoller: " .$core->getController();
+/*
+echo "contoller: " .$core->getController();
 echo "<br>Método : " .$core->getMetodo();
 $parametros = $core->getParametros();
 foreach ($parametros as $param)

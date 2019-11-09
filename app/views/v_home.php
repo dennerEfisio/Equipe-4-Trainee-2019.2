@@ -1,23 +1,50 @@
 <div class="base-home">
-			<h1 class="titulo"><span class="cor">SEJA</span> BEM VINDO</h1>
-		<div class="base-colunas">	
-			<a href="frm_cadastro.html" class="col">
-				<i class="icone ico1"></i>
-				<span><b>NOVO</b> CADASTRO</span>
-			</a>	
-			
-			<a href="lst_contatos.html" class="col">
-				<i class="icone ico2"></i>
-				<span><b>lista de</b> contatos</span>
-			</a>
-			
-			<a href="frm_cadastro.html" class="col">
-				<i class="icone ico3"></i>
-				<span><b>Editar</b> contatos</span>
-			</a>
-			
-			<a href="frm_cadastro.html" class="col">
-				<i class="icone ico4"></i>
-				<span><b>Excluir</b> contatos</span>
-			</a>
-		</div>	
+		<h2><strong>Menu de Alterações</strong></h2>
+		<div class="row">
+			<div class="col-3 mt-5">
+				<div class="card">
+					<a href="<?php echo URL_BASE . "espetaculo"; ?>">
+						<img class="card-img" src="<?php echo URL_BASE . "assets/img/espetaculos.png "; ?>">
+						<div class="card-body d-flex justify-content-center">
+							<h3><strong>Espetáculos</strong></h3>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-3 mt-5">
+
+				<div class="card">
+					<a href="<?php echo URL_BASE . "usuario"; ?>">
+						<img class="card-img" src="<?php echo URL_BASE . "assets/img/usuario.png "; ?>">
+						<div class="card-body d-flex justify-content-center">
+
+							<h3><strong>Usuários</strong></h3>
+						</div>
+					</a>
+
+				</div>
+
+			</div>
+
+			<div class="col-3 mt-5">
+				<div class="card">
+					<a href="<?php echo URL_BASE . "local"; ?>">
+						<img class="card-img" src="<?php echo URL_BASE . "assets/img/local.png "; ?>">
+						<div class="card-body d-flex justify-content-center">
+							<h3><strong>Locais</strong></h3>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-3 mt-5">
+				<div class="card">
+					<a href="<?php echo URL_BASE . "categoria"; ?>">
+						<img class="card-img " src="<?php echo URL_BASE . "assets/img/categoria.png "; ?>" >
+						<div class="card-body d-flex justify-content-center">
+							<h3><strong>Categorias</strong></h3>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+</div>	

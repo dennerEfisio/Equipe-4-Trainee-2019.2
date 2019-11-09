@@ -5,6 +5,7 @@ use app\core\Controller;
 class HomeController extends Controller{
     
    public function index(){
-       $this->load("template");
+    $dados["view"]="v_home";
+       $this->load("template",$dados);
    } 
 }
