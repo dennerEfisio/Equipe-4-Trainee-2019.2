@@ -11,7 +11,7 @@
 		<nav class="menu">
 	<ul>
 		<li><a href="<?php echo URL_BASE ?>">Home</a></li>
-		<li><a href="<?php echo URL_BASE."espetaculo/novo" ?>">Cadastrar novo</a></li>
-		<li><a href="<?php echo URL_BASE."espetaculo" ?>">Lista de contatos</a></li>
+		<li><a href="<?php echo URL_BASE."espetaculo" ?>">Espatáculo</a></li>
+		<li><a href="<?php echo URL_BASE."usuario" ?>">Usuário</a></li>
 	</ul>
 </nav>
