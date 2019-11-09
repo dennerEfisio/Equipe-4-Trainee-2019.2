@@ -15,6 +15,16 @@ class Usuario extends Model{
         return $qry->fetchAll(\PDO::FETCH_OBJ);
     }
 
+    public function busca($pesquisa){
+        $sql = "SELECT * FROM  usuario 
+                WHERE nome=:pesquisa";
+        $qry = $this->db->prepare($sql);
+        $qry->bindValue(":pesquisa",$pesquisa);
+        $qry->execute();
+
+        return $qry->fetchAll(\PDO::FETCH_OBJ);
+    }
+
     public function inserir($nome,$email,$senha,$url_imagem){
 
         $sql = "INSERT INTO usuario  SET

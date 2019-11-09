@@ -11,6 +11,7 @@ class UsuarioController extends Controller{
        $dados["usuarios"]=$usuario->lista();
        $dados["view"]="usuario/Index";
        $this->load("template", $dados); 
+       die($dados);
    }
    
    public function novo(){
@@ -55,5 +56,13 @@ class UsuarioController extends Controller{
         $dados["usuario"]=$usuario->getUsuario($id_usuario);
         $dados["view"]="usuario/Delete";
         $this->load("template", $dados);
+    }
+
+    public function buscar(){
+        $usuario =new Usuario();
+        $pesquisa=$_GET["pesquisa"];
+        $dados["usuarios"]=$usuario->busca($pesquisa);
+        $dados["view"]="usuario/Index";
+        $this->load("template", $dados); 
     }
 }

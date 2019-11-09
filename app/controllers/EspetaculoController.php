@@ -65,4 +65,12 @@ class EspetaculoController extends Controller{
         $dados["view"]="espetaculo/Delete";
         $this->load("template", $dados);
     }
+
+    public function buscar(){
+        $espetaculo =new Espetaculo();
+        $pesquisa=$_GET["pesquisa"];
+        $dados["espetaculos"]=$espetaculo->busca($pesquisa);
+        $dados["view"]="espetaculo/Index";
+        $this->load("template", $dados); 
+    }
 }

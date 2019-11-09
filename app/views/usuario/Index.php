@@ -2,11 +2,12 @@
 			<a href="<?php echo URL_BASE."usuario/novo" ?>" class="btn" style="width:17%">Cadastrar Novo</a>
 			<h1 class="titulo"><span class="cor">Lista de</span> Usuários</h1>
 		<div class="base-lista">
-				<form class="form-inline" action="<?php echo URL_BASE."usuario/buscar"; ?>" method="POST">
-                    <input class="form-control mr-1" type="text" placeholder="Buscar" id="buscarCategoria" name="buscaCategoria"/>
+
+				<form class="form-inline" action="<?php echo URL_BASE."usuario/buscar"; ?>" method="GET">
+                    <input class="form-control mr-1" type="text" placeholder="Buscar" id="pesquisa" name="pesquisa"/>
                     <input class="btn btn-secondary" style="width:17%" type="submit" value="Buscar" />
-                </form>
-			<span class="qtde"><b><?php echo count($usuarios)?></b> usuários cadastrados</span>
+				</form>
+				
 			<div class="tabela">	
 				<table width="100%" border="0" cellspacing="0" cellpadding="0">
 				  <thead>
@@ -19,10 +20,10 @@
 				  <tbody>
 				  	<?php foreach($usuarios as $usuario){ ?>
 					 <tr class="cor1">
-						<td><?php echo $usuario->nome?></td>
-						<td><?php echo $usuario->email?></td>
+						<td><?= $usuario->nome?></td>
+						<td><?= $usuario->email?></td>
 						<td align="center">
-							<a href="<?php echo URL_BASE."usuario/delete/".$usuario->id_usuario ?>" class="btn">Ver mais</a>
+							<a href="<?= URL_BASE."usuario/delete/".$usuario->id_usuario ?>" class="btn">Ver mais</a>
 						</td>
 
 					 </tr>

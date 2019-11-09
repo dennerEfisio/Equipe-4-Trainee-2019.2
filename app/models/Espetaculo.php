@@ -90,4 +90,14 @@ class Espetaculo extends Model{
         $qry->execute();
     }
 
+    public function busca($pesquisa){
+        $sql = "SELECT * FROM  espetaculo 
+                WHERE nome=:pesquisa";
+        $qry = $this->db->prepare($sql);
+        $qry->bindValue(":pesquisa",$pesquisa);
+        $qry->execute();
+
+        return $qry->fetchAll(\PDO::FETCH_OBJ);
+    }
+
 }
