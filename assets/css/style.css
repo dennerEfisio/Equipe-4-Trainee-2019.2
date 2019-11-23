@@ -384,13 +384,18 @@
 
 .redes {
     margin-right: 5%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: flex-end;
 }
 
 .redes li {
-    display: inline-block;
+    display:inline-flex;
 }
 
 .copyright {
+    
     margin-left: 5%;
 }
 .alinhamento{

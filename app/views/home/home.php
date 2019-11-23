@@ -2,8 +2,17 @@
         
 
         <div class="conteudo" id="conteudo1">
-            <h1 id="titulo1"><strong>Drama Club</strong></h1>
-            <p id="texto1">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia</p>
+            <h1 id="titulo1"><strong>
+                <?php 
+                    $this->ler(PATH_TXT."home/titulop1.txt","r");
+                ?>
+            </strong></h1>
+            <p id="texto1">
+                <?php 
+                    echo $this->ler(PATH_TXT."home/textop1.txt","r");
+                ?>
+            </p>
+
         </div>
     </div>
     <div class="produtosHome">
@@ -85,10 +94,16 @@
 
     <div class="parallax1" id="parallax2">
         <div class="conteudo" id="conteudo2">
-            <h1 id="titulo2"><strong>O teatro de uma forma nunca vista</strong></h1>
-            <p id="texto2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content
-                here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
-                infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+            <h1 id="titulo2"><strong>
+                <?php 
+                    $this->ler(PATH_TXT."home/titulop2.txt","r");
+                ?>
+            </strong></h1>
+            <p id="texto2">
+                <?php 
+                    echo $this->ler(PATH_TXT."home/textop2.txt","r");
+                ?>
+            </p>
         </div>
 
     </div>
