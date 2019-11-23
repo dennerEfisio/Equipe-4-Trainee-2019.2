@@ -1,12 +1,13 @@
 document.getElementById("conteudo1").className += " acao";
 
 document.addEventListener("scroll", function() {
-    var cont2 = document.getElementById("conteudo2")
+    var cont2 = document.getElementById("conteudo2");
     var ALTURA = window.innerHeight;
 
     if (scrollY + ALTURA > cont2.offsetTop) {
         cont2.className += " acao";
     }
+    
 })
 
 

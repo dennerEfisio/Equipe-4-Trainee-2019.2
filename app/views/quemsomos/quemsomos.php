@@ -1,6 +1,6 @@
 
 
-        <div class="container main">
+        <div class="container" id="conteudo1">
             <div class="titulo-imagem">
                 <h1>Quem Somos</h1>
                 <hr>
