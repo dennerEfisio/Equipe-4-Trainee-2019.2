@@ -18,7 +18,7 @@
 
                     <li class="nav-item mr-3 ml-3">
 
-                        <a class="nav-link text-center" href="<?php echo URL_BASE."home"; ?>">Espetáculos</a>
+                        <a class="nav-link text-center" href="<?php echo URL_BASE."portfolio"; ?>">Espetáculos</a>
 
                     </li>
 

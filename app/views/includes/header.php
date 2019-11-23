@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="<?php echo URL_BASE."assets/css/bootstrap.css";?> ">
     <link rel="stylesheet" type="text/css" href="<?php echo URL_BASE."assets/css/style.css";?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo URL_BASE."assets/css/styles.css";?>">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,400&display=swap" rel="stylesheet">
     <link rel="icon" href="<?php echo URL_BASE."assets/img/favicon.ico"?>" />
     <style>

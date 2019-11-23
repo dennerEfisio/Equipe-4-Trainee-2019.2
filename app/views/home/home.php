@@ -9,7 +9,7 @@
             </strong></h1>
             <p id="texto1">
                 <?php 
-                    echo $this->ler(PATH_TXT."home/textop1.txt","r");
+                    $this->ler(PATH_TXT."home/textop1.txt","r");
                 ?>
             </p>
 
@@ -28,12 +28,20 @@
                     <img src="<?php echo URL_BASE."assets/img/peca-teatro6.1.jpg" ;?>" class="d-block w-100" atl="" id="slide1">
                     <div class="carousel-caption d-none d-md-block textoCarousel">
 
-                        <h5><strong>Título da peça</strong></h5>
+                        <h5><strong>
+                            <?php 
+                                $this->ler(PATH_TXT."home/slides/titulos1.txt","r");
+                            ?>
+                        </strong></h5>
                         <p><strong>
-                            Descrição breve da peça. Descrição breve da peça. Descrição breve da peça.
+                            <?php 
+                                $this->ler(PATH_TXT."home/slides/descricaos1.txt","r");
+                            ?>
                         </strong></p>
                         <p class="descricao" id="descricao1">
-                            Descrição detalhada. Descrição detalhada. Descrição detalhada. Descrição detalhada. Descrição detalhada. Descrição detalhada. Descrição detalhada.Descrição detalhada. Descrição detalhada. Descrição detalhada. Descrição detalhada. Descrição detalhada.
+                            <?php 
+                                $this->ler(PATH_TXT."home/slides/textos1.txt","r");
+                            ?>
                         </p>
 
                         <a class="btn" id="botaoSlide1"> + Detalhes </a>
@@ -42,12 +50,20 @@
                 <div class="carousel-item">
                     <img src="<?php echo URL_BASE."assets/img/peca-teatro7.1.jpg";?>" class="d-block w-100" atl="" id="slide2">
                     <div class="carousel-caption d-none d-md-block textoCarousel">
-                        <h5><strong>Título da peça</strong></h5>
+                    <h5><strong>
+                            <?php 
+                                $this->ler(PATH_TXT."home/slides/titulos2.txt","r");
+                            ?>
+                        </strong></h5>
                         <p><strong>
-                            Descrição breve da peça. Descrição breve da peça. Descrição breve da peça.
+                            <?php 
+                                $this->ler(PATH_TXT."home/slides/descricaos2.txt","r");
+                            ?>
                         </strong></p>
                         <p class="descricao" id="descricao2">
-                            Descrição detalhada. Descrição detalhada. Descrição detalhada. Descrição detalhada. Descrição detalhada. Descrição detalhada. Descrição detalhada.Descrição detalhada. Descrição detalhada. Descrição detalhada. Descrição detalhada. Descrição detalhada.
+                            <?php 
+                                $this->ler(PATH_TXT."home/slides/textos2.txt","r");
+                            ?>
                         </p>
                         <a class="btn" id="botaoSlide2"> + Detalhes </a>
                     </div>
@@ -55,12 +71,20 @@
                 <div class="carousel-item">
                     <img src="<?php echo URL_BASE."assets/img/peca-teatro5.1.jpg";?>" class="d-block w-100" atl="" id="slide3">
                     <div class="carousel-caption d-none d-md-block textoCarousel">
-                        <h5><strong>Título da peça</strong></h5>
+                    <h5><strong>
+                            <?php 
+                                $this->ler(PATH_TXT."home/slides/titulos3.txt","r");
+                            ?>
+                        </strong></h5>
                         <p><strong>
-                            Descrição breve da peça. Descrição breve da peça. Descrição breve da peça.
+                            <?php 
+                                $this->ler(PATH_TXT."home/slides/descricaos3.txt","r");
+                            ?>
                         </strong></p>
                         <p class="descricao" id="descricao3">
-                            Descrição detalhada. Descrição detalhada. Descrição detalhada. Descrição detalhada. Descrição detalhada. Descrição detalhada. Descrição detalhada.Descrição detalhada. Descrição detalhada. Descrição detalhada. Descrição detalhada. Descrição detalhada.
+                            <?php 
+                                $this->ler(PATH_TXT."home/slides/textos3.txt","r");
+                            ?>
                         </p>
                         <a class="btn" id="botaoSlide3"> + Detalhes </a>
                     </div>
@@ -68,12 +92,20 @@
                 <div class="carousel-item">
                     <img src="<?php echo URL_BASE."assets/img/peca-teatro10.1.jpg";?>" class="d-block w-100" atl="" id="slide4">
                     <div class="carousel-caption d-none d-md-block textoCarousel">
-                        <h5><strong>Título da peça</strong></h5>
+                    <h5><strong>
+                            <?php 
+                                $this->ler(PATH_TXT."home/slides/titulos4.txt","r");
+                            ?>
+                        </strong></h5>
                         <p><strong>
-                            Descrição breve da peça. Descrição breve da peça. Descrição breve da peça.
+                            <?php 
+                                $this->ler(PATH_TXT."home/slides/descricaos4.txt","r");
+                            ?>
                         </strong></p>
                         <p class="descricao" id="descricao4">
-                            Descrição detalhada. Descrição detalhada. Descrição detalhada. Descrição detalhada. Descrição detalhada. Descrição detalhada. Descrição detalhada.Descrição detalhada. Descrição detalhada. Descrição detalhada. Descrição detalhada. Descrição detalhada.
+                            <?php 
+                                $this->ler(PATH_TXT."home/slides/textos4.txt","r");
+                            ?>
                         </p>
                         <a class="btn" id="botaoSlide4"> + Detalhes </a>
                     </div>
@@ -101,7 +133,7 @@
             </strong></h1>
             <p id="texto2">
                 <?php 
-                    echo $this->ler(PATH_TXT."home/textop2.txt","r");
+                    $this->ler(PATH_TXT."home/textop2.txt","r");
                 ?>
             </p>
         </div>

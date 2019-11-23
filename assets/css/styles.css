@@ -1,12 +1,12 @@
 .portBody{
-	background-image:url(../imgs/teatro.jpg);
+	background-image:url(../img/teatro.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
 	font-family: 'Raleway', sans-serif;
  }
 
  .parallax1 {
-    background-image: url(../imgs/teatro1.jpg);
+    background-image: url(../img/teatro1.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -225,7 +225,7 @@
 /*-------------------------------------------------------STYLE PORTFOLIO MESMO-----------------------------------------------------*/
 
 .portCarrossel{
-    border-top:1px solid rgba(255,255,255,0.3);
+    
     padding-top: 2%;
 }
 .portCarrosselImg{
