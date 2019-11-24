@@ -47,6 +47,10 @@ class EspetaculoController extends Controller{
 
     public function edit($id){
         $espetaculo =new Espetaculo(); 
+        $categoria =new Categoria();
+        $local =new Local();
+        $dados["categorias"]=$categoria->listaCat();
+        $dados["locais"]=$local->listaLoc();
         $dados["espetaculo"]=$espetaculo->getEspetaculo($id);
         $dados["view"]="espetaculo/Edit";
         $this->load("template", $dados);

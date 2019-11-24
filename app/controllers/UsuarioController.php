@@ -11,7 +11,6 @@ class UsuarioController extends Controller{
        $dados["usuarios"]=$usuario->lista();
        $dados["view"]="usuario/Index";
        $this->load("template", $dados); 
-       die($dados);
    }
    
    public function novo(){
@@ -21,7 +20,7 @@ class UsuarioController extends Controller{
 
    public function salvar(){
     $usuario =new Usuario();
-
+ 
     $id_usuario=$_POST["id_usuario"];
     $nome=$_POST["txt_nome"];
     $email=$_POST["txt_email"];

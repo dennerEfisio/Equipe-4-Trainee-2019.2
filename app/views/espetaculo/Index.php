@@ -1,16 +1,24 @@
 <div class="base-home">
-			<a href="<?php echo URL_BASE."espetaculo/novo" ?>" class="btn" style="width:17%">Cadastrar Novo</a>
-			<h1 class="titulo"><span class="cor">Lista de</span> contatos</h1>
-		<div class="base-lista">
+			
+		<div class="row">
+            <h3 class="col-md-12 tituloSis">Espetáculos</h3>
+        </div>
+			<div class="row linhacb mt-3">
+				<div class="col-md-4">
+					<a  class="btn btn-info" href="<?php echo URL_BASE."espetaculo/novo" ?>">Cadastrar Novo</a>
+				</div>
+				<div class="col-md-4 mt-3"></div>
+				<div class="col-md-4">
+					<form class="form-inline" action="<?php echo URL_BASE."espetaculo/buscar"; ?>" method="GET">
+						<input class="col-md-8 form-control mr-1" type="text" placeholder="Buscar" id="pesquisa" name="pesquisa"/>
+						<input class="col-md-3 btn btn-info" type="submit" value="Buscar" />
+					</form>
+				</div>
+			</div>
 
-		<form class="form-inline" action="<?php echo URL_BASE."espetaculo/buscar"; ?>" method="GET">
-                    <input class="form-control mr-1" type="text" placeholder="Buscar" id="pesquisa" name="pesquisa"/>
-                    <input class="btn btn-secondary" style="width:17%" type="submit" value="Buscar" />
-				</form>
-
-			<div class="tabela">	
-				<table width="100%" border="0" cellspacing="0" cellpadding="0">
-				  <thead>
+				<div class="table-responsive-xl">
+  				<table class="table table-bordered table-hover tabelaIndex">
+				  <thead class="thead-dark">
 					   <tr>
 						<th>Nome</th>
 						<th>Local id</th>
@@ -24,14 +32,8 @@
 						<td><?php echo $espetaculo->nome?></td>
 						<td><?php echo $espetaculo->local_id?></td>
 						<td><?php echo $espetaculo->categoria_id?></td>
-						<!-- <td align="center">
-							<a href="<?php echo URL_BASE."espetaculo/edit/".$espetaculo->id ?>" class="btn">Editar</a>
-						</td>
 						<td align="center">
-							<a href="<?php echo URL_BASE."espetaculo/delete/".$espetaculo->id ?>" class="btn excluir">excluir</a>
-						</td> -->
-						<td align="center">
-							<a href="<?php echo URL_BASE."espetaculo/delete/".$espetaculo->id ?>" class="btn excluir">Ver mais</a>
+							<a class="btn btn-info" href="<?php echo URL_BASE."espetaculo/delete/".$espetaculo->id ?>">Ver mais</a>
 						</td>
 
 					 </tr>
@@ -42,5 +44,5 @@
 				</table>
 		</div>					
 				
-		</div>	
+	
 </div>	

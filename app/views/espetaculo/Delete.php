@@ -1,32 +1,50 @@
-<div class="base-home">
-			<h1 class="titulo"><span class="cor">Novo</span> cadastro</h1>
-		<div class="base-formulario">	
-				<label>Nome</label>
-					<input name="txt_nome" value="<?php echo $espetaculo->nome ?>" type="text" placeholder="Insira o nome">
-				<label>Ingresso</label>
-					<input name="txt_ingresso" value="<?php echo $espetaculo->ingresso ?>" type="number" placeholder="Valor do ingresso">
-				<label>Sinopse</label>
-					<input name="txt_sinopse" value="<?php echo $espetaculo->sinopse ?>" type="text" placeholder="Insira a sinopse">	
-				<div class="col">
-					<label>url_imagem</label>
-					<input name="txt_url_imagem" value="<?php echo $espetaculo->url_imagem ?>" type="text" placeholder="Insira a url da imagem">
-				</div>	
-				<div class="col">
-					<label>Local</label>
-					<input name="txt_localId" value="<?php echo $espetaculo->local_id ?>" type="number" placeholder="">
-				</div>	
-				
-				<div class="col">
-					<label>Categoria</label>
-					<input name="txt_categoriaId" value="<?php echo $espetaculo->categoria_id ?>" type="number" placeholder="">
+<div class="base-home">	
+		<div class="row">
+            <h3 class="col-md-12 tituloSis">Informações do Espetáculo</h3>
+        </div>
+	<div class="formularioEsp">	
+		<form>
+		<fieldset disabled>
+  			<div class="row">
+    			<div class="col-md-5">
+					<label>Nome</label>
+					<input class="form-control" name="txt_nome" value="<?php echo $espetaculo->nome ?>" type="text" placeholder="Insira o nome">
+    			</div>
+    			<div class="col-md-5">
+					<label>Ingresso</label>
+					<input class="form-control" name="txt_ingresso" value="<?php echo $espetaculo->ingresso ?>" type="number" placeholder="Valor do ingresso">
+   				</div>
+    			<div class="col-md-8">
+  					<label>Sinopse</label>
+					<input class="form-control" name="txt_sinopse" value="<?php echo $espetaculo->sinopse ?>" type="text">
 				</div>
-				 
-                
-				<a href="<?php echo URL_BASE."espetaculo/edit/".$espetaculo->id ?>" class="btn">Editar</a>	
-				<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#excluirModal">Excluir</button>
-                
+				<div class="col-md-8">
+					<label>Url_imagem</label>
+					<input class="form-control" name="txt_url_imagem" value="<?php echo $espetaculo->url_imagem ?>" type="text" placeholder="Insira a url da imagem">
+				</div>
+				<div class="col-md-5">
+					<label>Local</label>
+					<input class="form-control" name="txt_localId" value="<?php echo $espetaculo->local_id ?>" type="number" placeholder="">		
+				</div>
+				<div class="col-md-5">
+					<label>Categoria</label>
+					<input class="form-control" name="txt_categoriaId" value="<?php echo $espetaculo->categoria_id ?>" type="number" placeholder="">
+				</div>
+		</fieldset>
+				<div class="form-inline col-md-12 formBotoes mt-4">
+					<div>
+						<input class="form-control" type="hidden" name="acao" value="Cadastrar">
+						<input class="form-control" type="hidden" name="id" value="<?php echo $espetaculo->id ?>">
+						<a href="<?php echo URL_BASE."espetaculo/edit/".$espetaculo->id ?>" class="btn btn-primary">Editar</a>	
 				
-		</div>	
+					</div>
+					<div class="ml-4">
+					<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#excluirModal">Excluir</button>
+					</div>
+				</div>
+			  </div>
+		</form>
+	</div>
 </div>	
 
 <div class="modal fade" id="excluirModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -34,7 +52,7 @@
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+				<h5 class="modal-title" id="exampleModalLabel">Excluir</h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>

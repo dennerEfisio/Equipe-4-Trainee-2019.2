@@ -3,20 +3,17 @@
 <meta charset="utf-8">
 <title>mjailton</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="<?php echo URL_BASE."assets/css/style.css" ?>">
+<link rel="stylesheet" type="text/css" href="<?php echo URL_BASE."assets/css/styles.css" ?>">
 <link rel="stylesheet" type="text/css" href="<?php echo URL_BASE."assets/css/bootstrap.css" ?>">
 </head>
 
 <body>
-<div class="conteudo">	
-	<div class="base-central">	
+<div class=" containerSis ">		
         <?php include "cabecalho.php";?>	
         
         <?php $this->load($view,$viewData)?>
 
-        <?php include "rodape.php";?>
-	
-    </div>		
+        <?php include "rodape.php";?>		
 </div>	
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
