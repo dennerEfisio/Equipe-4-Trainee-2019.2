@@ -100,14 +100,15 @@ class Usuario extends Model{
         if($qry->rowCount()>0){
             $resultado=$qry->fetch(\PDO::FETCH_OBJ);
             @session_start();
+            $_SESSION['status'] = "logado";
 	        $_SESSION['login'] = $login;
 	        $_SESSION['senha'] =$senha;
-	        header('Location:URL_BASE."administrador";'); 
+            header("Location:".URL_BASE."administrador"); 
         }else{
             @session_start();
             $_SESSION = array(); 
 			session_destroy();
-		    header("Location:URL_BASE;");
+		    header("Location:".URL_BASE); 
         }
         
     }
