@@ -88,4 +88,28 @@ class Usuario extends Model{
         $qry->execute();
     }
 
+    public function getLogin($email,$senha){
+        $sql = "SELECT * FROM  usuario 
+                WHERE email=:email,
+                senha=:senha";
+        $qry = $this->db->prepare($sql);
+        $qry->bindValue(":email",$email);
+        $qry->bindValue(":senha",$senha);
+        $qry->execute();
+
+        if($qry->rowCount()>0){
+            $resultado=$qry->fetch(\PDO::FETCH_OBJ);
+            @session_start();
+	        $_SESSION['login'] = $login;
+	        $_SESSION['senha'] =$senha;
+	        header('Location:URL_BASE."administrador";'); 
+        }else{
+            @session_start();
+            $_SESSION = array(); 
+			session_destroy();
+		    header("Location:URL_BASE;");
+        }
+        
+    }
+
 }

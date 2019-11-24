@@ -1,3 +1,4 @@
+</div>
 <div class="base-home">
 			
 		<div class="row">
@@ -16,7 +17,7 @@
 				</div>
 			</div>
 
-				<div class="table-responsive-xl">
+				<div class="table-responsive-xl mt-5">
   				<table class="table table-bordered table-hover tabelaIndex">
 				  <thead class="thead-dark">
 					   <tr>

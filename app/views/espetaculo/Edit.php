@@ -1,3 +1,4 @@
+</div>
 <div class="base-home">
 		<div class="row">
             <h3 class="col-md-12 tituloSis">Editar Espetáculo</h3>
