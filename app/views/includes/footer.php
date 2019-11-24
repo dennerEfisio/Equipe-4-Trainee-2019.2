@@ -7,7 +7,7 @@
                 <div class="redes">
                     <ul>
                         <li>
-                            <a href="#"><img src="<?php echo URL_BASE . "assets/img/facebook.png"; ?>" width="30"> </a>
+                            <a href="https://www.facebook.com/profile.php?id=100009431179543" target="_blank"><img src="<?php echo URL_BASE . "assets/img/facebook.png"; ?>" width="30"> </a>
                         </li>
                         <li>
                             <a href="#"><img src="<?php echo URL_BASE . "assets/img/instagram.png"; ?>" width="30"> </a>

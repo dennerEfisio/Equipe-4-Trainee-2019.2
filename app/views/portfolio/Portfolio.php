@@ -1,5 +1,5 @@
 
-<div class="container portCarrossel">
+<div class="container pb-2 portCarrossel">
   <div class="row">
    <div class="col-sm-3 portCarrosselLado">
     <div class="portCarrosselTexto">
@@ -43,9 +43,10 @@
  </form>
 </div>
 </div>
-
+</div>
+</div>
 <!-- ------------------------------------Div Cards---------------------------------------------------------------------------- -->
-
+<div class="container">
 <div class="portVariosCards row">
  <div class="portCard col-sm-4">
   <div class="portSpan">
@@ -94,6 +95,7 @@
     <button type="button" class="portCardBotao btn" data-toggle="modal" data-target="#portModal">Saiba
     Mais</button>
   </div>
+</div>
 </div>
 </div>
 </div>

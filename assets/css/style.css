@@ -554,3 +554,18 @@
 .botoes{
     text-align:center;
 }
+.cardback{
+    background:white;
+    
+}
+.cardback a{
+    text-decoration: none;
+    color:black;
+    transition: 0.2s;
+}
+
+.cardback a:hover{
+    background:#F6AE2D;
+    color:white;
+}
+

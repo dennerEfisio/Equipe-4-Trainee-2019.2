@@ -125,5 +125,5 @@
             <button class="btn btn-secondary" type="submit">Salvar</button>
         </div>
     </form>
-    <a href="<?php echo URL_BASE."home/" ; ?>" class="btn btn-secondary">Voltar</a>
+    <a href="<?php echo URL_BASE."administrador" ; ?>" class="btn btn-secondary">Voltar</a>
 </div>

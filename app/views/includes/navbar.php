@@ -77,22 +77,22 @@
                             <hr>
                         </div>
                         <div class="modal-body">
-                            <form action="<?php echo URL_BASE; ?>" method="POST">
+                            <form action="<?php echo URL_BASE."contato"; ?>" method="POST">
                                 <div class="form-group">
                                     <label for="nome">Nome:</label>
-                                    <input type="text" class="form-control inputContModal" id="nome" placeholder="Nome Completo" required>
+                                    <input type="text" class="form-control inputContModal" id="nome" placeholder="Nome Completo" name="nome" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Email:</label>
-                                    <input type="email" class="form-control inputContModal" id="email" placeholder="nome@exemplo.com" required>
+                                    <input type="email" class="form-control inputContModal" id="email" placeholder="nome@exemplo.com" name="email" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="telefone">Telefone:</label>
-                                    <input type="text" class="form-control inputContModal" id="telefone" placeholder="(00) 00000-0000" required>
+                                    <input type="text" class="form-control inputContModal" id="telefone" placeholder="(00) 00000-0000" name="telefone" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="mensagem">Mensagem:</label>
-                                    <textarea class="form-control inputContModal" id="mensagem" rows="3" required></textarea>
+                                    <textarea class="form-control inputContModal" id="mensagem" rows="3" name="mensagem" required></textarea>
                                 </div>
 
                                 <div class="botoesContModal" tabindex="0">
