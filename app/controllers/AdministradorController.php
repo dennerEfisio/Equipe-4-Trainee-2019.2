@@ -19,6 +19,29 @@ class AdministradorController extends Controller
         
         $email=$_GET['login_email'];
         $senha=md5($_GET['login_senha']);
-        $dados["usuarios"]=$usuario->getLogin($email,$senha);
+        
+        $dados["usuarios"]=$usuario->login($email,$senha);
+         
+        if($dados["usuarios"] !=0){
+            @session_start();
+              $_SESSION['status'] = "logado";
+	          $_SESSION['login'] = $login;
+	          $_SESSION['senha'] =$senha;
+              header("Location:".URL_BASE."administrador"); 
+        }else{
+            @session_start();
+            $_SESSION = array(); 
+	        session_destroy();
+		    header("Location:".URL_BASE); 
+          }
+    }
+
+    public function logout(){
+        
+            @session_start();
+            $_SESSION = array(); 
+	        session_destroy();
+		    header("Location:".URL_BASE); 
+          
     }
 }

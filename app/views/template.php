@@ -4,11 +4,19 @@
 <body class="alinhamento">
     <div class="cont">
         <!-- Navbar -->
-        
-        <?php include "includes/navbar.php"; ?>
-        <?php include "cabecalho.php"; ?>
+         
+        <?php 
+        @session_start(); 
+        if(isset($_SESSION['status'])){
+            include "includes/cabecalho.php";
+            
+         }else{
+            include "includes/navbar.php";
+         }
+        ?>
         <!-- Conteudo central -->
         <?php $this->load($view,$viewData); ?>
+   
     </div>
     
     <!-- Footer -->
