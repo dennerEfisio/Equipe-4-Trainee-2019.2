@@ -28,15 +28,10 @@
 .conteudo {
     padding: 15%;
     position: relative;
-    opacity: 0;
-}
-
-.acao {
     opacity: 1;
-    animation-name: texto-parallax;
-    animation-duration: 1s;
     text-align: center;
 }
+
 
 .navFont {
     font-size: 30px;
@@ -160,11 +155,10 @@
 @keyframes texto-parallax {
     0% {
         opacity: 0;
-        transform: translate(100px, 0px);
+
     }
     100% {
         opacity: 1;
-        transform: translate(0px, 0px);
     }
 }
 

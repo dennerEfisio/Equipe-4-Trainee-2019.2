@@ -19,7 +19,8 @@ class ContatoController extends Controller
 
         if(mail(EMAIL_BASE,$subject,$conteudo,$emailheader))
         {
-            header("location:" . URL_BASE );
+            echo "Mensagem enviada com sucesso";
+            //header("location:" . URL_BASE );
         }
         else
             echo "Deu ruim";
