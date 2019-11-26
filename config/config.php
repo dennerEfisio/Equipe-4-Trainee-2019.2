@@ -11,6 +11,6 @@ define('METODO_PADRAO', 'index');
 define('NAMESPACE_CONTROLLER', 'app\\controllers\\');
 
 
-define('URL_BASE', 'http://localhost:8000/');
+define('URL_BASE', 'http://localhost:8000/');   
 define('PATH_TXT','/home/gabriel/GIT/Equipe-4-Trainee-2019.2/app/views/');
 define('EMAIL_BASE','gabrielfsil264@gmail.com');

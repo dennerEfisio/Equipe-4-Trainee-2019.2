@@ -19,7 +19,7 @@ class ContatoController extends Controller
 
         if(mail(EMAIL_BASE,$subject,$conteudo,$emailheader))
         {
-            echo "Sucesso";
+            header("location:" . URL_BASE );
         }
         else
             echo "Deu ruim";
