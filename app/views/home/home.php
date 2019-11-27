@@ -138,9 +138,4 @@
         </div>
 
     </div>
-    <?php if($confirmacao != ""){
-        echo "<script>alert('$confirmacao');</script>";
-        $confirmacao = "";
-
-    }
-     ?>
+    
