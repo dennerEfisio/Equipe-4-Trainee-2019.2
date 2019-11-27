@@ -1,5 +1,4 @@
 
-        
 
         <div class="conteudo" id="conteudo1">
             <h1 id="titulo1"><strong>
@@ -139,4 +138,9 @@
         </div>
 
     </div>
-    
+    <?php if($confirmacao != ""){
+        echo "<script>alert('$confirmacao');</script>";
+        $confirmacao = "";
+
+    }
+     ?>
