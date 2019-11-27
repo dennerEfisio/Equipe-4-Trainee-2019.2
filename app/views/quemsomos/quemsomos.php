@@ -8,19 +8,7 @@
             <div class="texto-imagem">
                 <h4 class="texto">
                     <p class="texto">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris molestie gravida sem sit amet
-                        tempus.
-                        Aliquam id quam metus. Praesent odio lorem, mollis sit amet dolor sed, eleifend lacinia augue.
-                        Proin
-                        dui
-                        velit, ullamcorper id pharetra a, malesuada in ante. Quisque a viverra nunc. Sed a ullamcorper
-                        libero,
-                        id sodales ex. Cras vestibulum metus eu nulla faucibus pretium. Cras tincidunt dui eu ex
-                        vulputate
-                        eleifend. Praesent at dolor sed orci aliquam eleifend ut ut lacus. Duis luctus accumsan dui, et
-                        tristique odio mollis non. Nunc posuere imperdiet ipsum eget suscipit. Quisque laoreet hendrerit
-                        ante
-                        eget maximus. Praesent ut facilisis nisl.
+                    A grande capacidade de público e o palco projetado para receber os mais diversos espetáculos fazem do Felipe Peças um espaço privilegiado e um dos poucos do gênero disponíveis atualmente no país. Teatro,dança, ópera, concerto, show. A história do Felipe Peças é um desfilar de grandes nomes das artes nacionais e internacionais, responsáveis por momentos de beleza e emoção, que se apresentaram ao longo das últimas décadas em Juiz de Fora. 
                     </p>
                 </h4>
                 <hr>
@@ -33,9 +21,7 @@
             <div class="texto-imagem">
                 <h4 class="texto">
                     <p class="texto">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar purus cursus, iaculis
-                        urna
-                        sit amet, euismod quam. Donec sed dictum nunc. Etiam id mauris.
+                    Proporcionar arte teatral com excelência, conectando grandes marcas ao desenvolvimento de novos talentos para levar entretenimento de alta qualidade ao público brasileiro.
                     </p>
                 </h4>
                 <hr>
@@ -48,9 +34,7 @@
             <div class="texto-imagem">
                 <h4 class="texto">
                     <p class="texto">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet justo non lectus
-                        fermentum,
-                        ut lobortis purus fringilla. Praesent nisi lacus, ullamcorper nec dui vitae.
+                    Ser a empresa que reflete o que há de melhor e mais pioneiro na indústria de entretenimento brasileiro; sendo a referência principal neste aspecto para o público, a classe artística e as empresas.
                     </p>
                 </h4>
                 <br><br>
@@ -63,43 +47,43 @@
         <div class="container container-fotos col-sm-4">
             <img src="<?php echo URL_BASE."assets/img/foto1.jpg";?>" alt="Fulano" class="image">
             <div class="overlay">
-                <div class="text-card">Fulano de Tal</div>
-                <div class="text-card-info">Função do Fulano</div>
+                <div class="text-card">Igor Sassaloka</div>
+                <div class="text-card-info">Presidente</div>
             </div>
         </div>
         <div class="container container-fotos col-sm-4">
             <img src="<?php echo URL_BASE."assets/img/foto2.jpg";?>" alt="Fulano" class="image">
             <div class="overlay">
-                <div class="text-card">Fulano de Tal</div>
-                <div class="text-card-info">Função do Fulano</div>
+                <div class="text-card">Dennão</div>
+                <div class="text-card-info">Gerente Comercial</div>
             </div>
         </div>
         <div class="container container-fotos col-sm-4">
-            <img src="<?php echo URL_BASE."assets/img/foto3.jpg";?>" alt="Fulano" class="image">
+            <img src="<?php echo URL_BASE."assets/img/felipepp.jpeg";?>" alt="Fulano" class="image">
             <div class="overlay">
-                <div class="text-card">Fulano de Tal</div>
-                <div class="text-card-info">Função do Fulano</div>
+                <div class="text-card">Felipe Peças</div>
+                <div class="text-card-info">CEO e Fundador</div> 
             </div>
         </div>
         <div class="container container-fotos col-sm-4">
             <img src="<?php echo URL_BASE."assets/img/foto4.jpg";?>" alt="Fulano" class="image">
             <div class="overlay">
-                <div class="text-card">Fulano de Tal</div>
-                <div class="text-card-info">Função do Fulano</div>
+                <div class="text-card">Amanda</div>
+                <div class="text-card-info">Projetista</div>
             </div>
         </div>
         <div class="container container-fotos col-sm-4">
-            <img src="<?php echo URL_BASE."assets/img/foto5.jpg";?>" alt="Fulano" class="image">
+            <img src="<?php echo URL_BASE."assets/img/gabriel2.jpeg";?>" alt="Fulano" class="image">
             <div class="overlay">
-                <div class="text-card">Fulano de Tal</div>
-                <div class="text-card-info">Função do Fulano</div>
+                <div class="text-card">Gabriel</div>
+                <div class="text-card-info">Projetista</div>
             </div>
         </div>
         <div class="container container-fotos col-sm-4">
             <img src="<?php echo URL_BASE."assets/img/foto6.jpg";?>" alt="Fulano" class="image">
             <div class="overlay">
-                <div class="text-card">Fulano de Tal</div>
-                <div class="text-card-info">Função do Fulano</div>
+                <div class="text-card">Thiagão</div>
+                <div class="text-card-info">Vice-presidente</div>
             </div>
         </div>
        
