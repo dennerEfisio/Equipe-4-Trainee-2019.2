@@ -51,40 +51,5 @@
         </div>
     </div>
     <br/>
-    <h2><strong>Edição de Textos</strong></h2>
-    <div class="row">
-        <div class="col-3 mt-5">
-                <div class="card cardback">
-                    <a href="<?php echo URL_BASE . "home/edit"; ?>">
-                        <div class="card-body d-flex justify-content-center">
-                            <h4><strong>Home</strong></h4>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-3 mt-5">
-
-                <div class="card cardback">
-                    <a href="<?php echo URL_BASE . "quemsomos/edit"; ?>">
-                        <div class="card-body d-flex justify-content-center">
-
-                            <h4><strong>Quem Somos</strong></h4>
-                        </div>
-                    </a>
-
-                </div>
-
-            </div>
-
-            <div class="col-3 mt-5">
-                <div class="card cardback">
-                    <a href="<?php echo URL_BASE . "espetaculo/edit"; ?>">
-                        <div class="card-body d-flex justify-content-center">
-                            <h4><strong>Espetaculos</strong></h4>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 </div>

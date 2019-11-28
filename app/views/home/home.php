@@ -2,14 +2,10 @@
 
         <div class="conteudo" id="conteudo1">
             <h1 id="titulo1"><strong>
-                <?php 
-                    $this->ler(PATH_TXT."home/titulop1.txt","r");
-                ?>
+            Felipe Peças
             </strong></h1>
             <p id="texto1">
-                <?php 
-                    $this->ler(PATH_TXT."home/textop1.txt","r");
-                ?>
+            Uma viagem pelo mundo da dramaturgia
             </p>
 
         </div>
@@ -28,19 +24,13 @@
                     <div class="carousel-caption d-none d-md-block textoCarousel">
 
                         <h5><strong>
-                            <?php 
-                                $this->ler(PATH_TXT."home/slides/titulos1.txt","r");
-                            ?>
+                        Hora de poCA FÉ
                         </strong></h5>
                         <p><strong>
-                            <?php 
-                                $this->ler(PATH_TXT."home/slides/descricaos1.txt","r");
-                            ?>
+                        Horário de fazer aquele happy hour em expediente
                         </strong></p>
                         <p class="descricao" id="descricao1">
-                            <?php 
-                                $this->ler(PATH_TXT."home/slides/textos1.txt","r");
-                            ?>
+                        Um momento nada reflexivo com os amigos
                         </p>
 
                         <a class="btn" id="botaoSlide1"> + Detalhes </a>
@@ -49,20 +39,14 @@
                 <div class="carousel-item">
                     <img src="<?php echo URL_BASE."assets/img/peca-teatro7.1.jpg";?>" class="d-block w-100" atl="" id="slide2">
                     <div class="carousel-caption d-none d-md-block textoCarousel">
-                    <h5><strong>
-                            <?php 
-                                $this->ler(PATH_TXT."home/slides/titulos2.txt","r");
-                            ?>
+                        <h5><strong>
+                        Chegou o especial
                         </strong></h5>
                         <p><strong>
-                            <?php 
-                                $this->ler(PATH_TXT."home/slides/descricaos2.txt","r");
-                            ?>
+                        Quando chega o bicho pega
                         </strong></p>
                         <p class="descricao" id="descricao2">
-                            <?php 
-                                $this->ler(PATH_TXT."home/slides/textos2.txt","r");
-                            ?>
+                        Aquele especial que é o mais exótico da turna
                         </p>
                         <a class="btn" id="botaoSlide2"> + Detalhes </a>
                     </div>
@@ -71,19 +55,13 @@
                     <img src="<?php echo URL_BASE."assets/img/peca-teatro5.1.jpg";?>" class="d-block w-100" atl="" id="slide3">
                     <div class="carousel-caption d-none d-md-block textoCarousel">
                     <h5><strong>
-                            <?php 
-                                $this->ler(PATH_TXT."home/slides/titulos3.txt","r");
-                            ?>
+                        A lenda do Chupa-Cabra
                         </strong></h5>
                         <p><strong>
-                            <?php 
-                                $this->ler(PATH_TXT."home/slides/descricaos3.txt","r");
-                            ?>
+                        Tudo isso e muito mais hoje no Code Espetacular
                         </strong></p>
                         <p class="descricao" id="descricao3">
-                            <?php 
-                                $this->ler(PATH_TXT."home/slides/textos3.txt","r");
-                            ?>
+                        Onde ele habita? O que ele come? Quais são seus hábitos?
                         </p>
                         <a class="btn" id="botaoSlide3"> + Detalhes </a>
                     </div>
@@ -92,19 +70,13 @@
                     <img src="<?php echo URL_BASE."assets/img/peca-teatro10.1.jpg";?>" class="d-block w-100" atl="" id="slide4">
                     <div class="carousel-caption d-none d-md-block textoCarousel">
                     <h5><strong>
-                            <?php 
-                                $this->ler(PATH_TXT."home/slides/titulos4.txt","r");
-                            ?>
+                    Em busca do IRA 85
                         </strong></h5>
                         <p><strong>
-                            <?php 
-                                $this->ler(PATH_TXT."home/slides/descricaos4.txt","r");
-                            ?>
+                        Parece loucura mas o enredo ocorre na UFJF
                         </strong></p>
                         <p class="descricao" id="descricao4">
-                            <?php 
-                                $this->ler(PATH_TXT."home/slides/textos4.txt","r");
-                            ?>
+                        Depois de 173 anos veja o que eles encontraram
                         </p>
                         <a class="btn" id="botaoSlide4"> + Detalhes </a>
                     </div>
@@ -126,14 +98,10 @@
     <div class="parallax1" id="parallax2">
         <div class="conteudo" id="conteudo2">
             <h1 id="titulo2"><strong>
-                <?php 
-                    $this->ler(PATH_TXT."home/titulop2.txt","r");
-                ?>
+            Uma viagem pelo mundo da dramaturgia
             </strong></h1>
             <p id="texto2">
-                <?php 
-                    $this->ler(PATH_TXT."home/textop2.txt","r");
-                ?>
+            Aqui toda estrutura é feita para que os espectadores possuam a melhor experiência teatral possível
             </p>
         </div>
 
