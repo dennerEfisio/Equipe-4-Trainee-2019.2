@@ -2,7 +2,7 @@
 
 define("SERVIDOR", "127.0.0.1");
 define("BANCO", "bd_felipe_pecas");
-define("USUARIO", "root");
+define("USUARIO", "felipe");
 define("SENHA", "");
 
 

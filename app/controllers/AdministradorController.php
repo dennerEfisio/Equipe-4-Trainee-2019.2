@@ -9,8 +9,18 @@ class AdministradorController extends Controller
 {
     public function index()
     {
-        $dados["view"] = "home_back";
-        $this->load("template",$dados);
+        
+        @session_start(); 
+        if(isset($_SESSION['status'])){
+
+            $dados["view"] = "home_back";
+            $this->load("template",$dados);
+            
+         }else{
+            $dados['view'] = "home/home";
+            $this->load("template",$dados);
+         }
+        
     }
 
     public function logar()
