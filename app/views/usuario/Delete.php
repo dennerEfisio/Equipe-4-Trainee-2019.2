@@ -3,7 +3,11 @@
 		<div class="row">
             <h3 class="col-md-12 tituloSis">Informações do Usuário</h3>
 		</div>
-		 <div class="formularioEsp">	
+		
+		<div class="divImgSis mr-2">
+				<img src="<?php echo $usuario->url_imagem ?>" class="imgSis" alt="Usuário">
+		</div>	
+		 <div class="formularioEsp">
 			 <form>
   					<div class="row">
     					<div class="col-md-5">

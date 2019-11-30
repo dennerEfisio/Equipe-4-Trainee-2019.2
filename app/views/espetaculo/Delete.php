@@ -2,7 +2,10 @@
 <div class="base-home">	
 		<div class="row">
             <h3 class="col-md-12 tituloSis">Informações do Espetáculo</h3>
-        </div>
+		</div>
+		<div class="divImgSis mr-2">
+				<img src="<?php echo $espetaculo->url_imagem ?>" class="imgSis" alt="Espetáculo">
+		</div>	
 	<div class="formularioEsp">	
 		<form>
 		<fieldset disabled>
