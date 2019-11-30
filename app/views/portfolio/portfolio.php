@@ -41,9 +41,9 @@
 <div class="portPesquisa row">
  <div class="col-sm-4">
   <form class="form-inline my-2 my-lg-0">
-   <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-   <button class="btn portPesquisaBotao" type="button">Pesquisa</button>
- </form>
+   <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar..." name="pesquisa">
+   <input class="col-md-3 btn btn-info btn portPesquisaBotao" type="submit" value="Buscar" />
+  </form>
 </div>
 </div>
 
@@ -54,33 +54,31 @@
 		<div class="portCard col-sm-4">
       <div class="portSpan">
         <img src="<?php echo $espetaculo->url_imagem?>" alt="Peça de teatro" class="portCardImg">
-        <div class="portCardNomePeca">Nome da Peça</div>
-        <button type="button" class="portCardBotao btn" data-toggle="modal" data-target="#portModal">Saiba Mais</button>
+        <div class="portCardNomePeca"><?php echo $espetaculo->nome?></div>
+        <button type="button" class="portCardBotao btn" data-toggle="modal" data-target="#portModal<?php echo $espetaculo->id?>">Saiba Mais</button>
       </div>
     </div>
-
-
-<!-- Modal -->
-<div class="modal fade" id="portModal" role="dialog">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header portModalHead">
-        <button type="button" class="close fechar" data-dismiss="modal">&#9747;</button>
-        <div class="modal-title portModalTitulo">Nome da Peça :<?php echo "  ".$espetaculo->nome ; ?></div>
-        <hr>
-      </div>
-      <div class="modal-body portModalBody">
-            <strong>Valor Ingresso:</strong> <?php echo "  ".$espetaculo->ingresso ; ?><br/>
-            <strong>Sinopse:</strong><?php echo "  ".$espetaculo->sinopse; ?><br/>
-            <strong>Local:</strong><?php echo "  ".$espetaculo->local_id ; ?><br/>
-            <strong>Categoria:</strong><?php echo "  ".$espetaculo->categoria_id; ?><br/>
-          <div class="portModalBotao" tabindex="0">
-            <button type="button" class="btn btn-danger botaoCancelar" data-dismiss="modal">Fechar</button>
+      <!-- Modal -->
+      <div class="modal fade" id="portModal<?php echo $espetaculo->id?>" role="dialog">
+          <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header portModalHead">
+                      <button type="button" class="close fechar" data-dismiss="modal">&#9747;</button>
+                      <div class="modal-title portModalTitulo">Nome da Peça :<?php echo "  ".$espetaculo->nome ; ?></div>
+                      <hr>
+                    </div>
+                    <div class="modal-body portModalBody">
+                          <strong>Valor Ingresso:</strong> <?php echo "  ".$espetaculo->ingresso ; ?><br/>
+                          <strong>Sinopse:</strong><?php echo "  ".$espetaculo->sinopse; ?><br/>
+                          <strong>Local:</strong><?php echo "  ".$espetaculo->local_id ; ?><br/>
+                          <strong>Categoria:</strong><?php echo "  ".$espetaculo->categoria_id; ?><br/>
+                        <div class="portModalBotao" tabindex="0">
+                          <button type="button" class="btn btn-danger botaoCancelar" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
           </div>
       </div>
-    </div>
-  </div>
-</div>
 
 
     <?php } ?>

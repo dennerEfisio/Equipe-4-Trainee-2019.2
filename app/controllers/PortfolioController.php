@@ -11,4 +11,13 @@ class PortfolioController extends Controller{
         $dados["view"] = "portfolio/portfolio";
         $this->load("template",$dados);
     }
+    public function buscar(){
+        echo 'chegou';
+        $espetaculo =new Espetaculo();
+        $pesquisa=$_GET["pesquisa"];
+        echo $pesquisa;
+        // $dados["espetaculos"]=$espetaculo->busca($pesquisa);
+        // $dados["view"] = "portfolio/portfolio";
+        // $this->load("template", $dados); 
+    }
 }

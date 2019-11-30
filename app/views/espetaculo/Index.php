@@ -12,7 +12,7 @@
 				<div class="col-md-4 mt-3"></div>
 				<div class="col-md-4">
 					<form class="form-inline" action="<?php echo URL_BASE."espetaculo/buscar"; ?>" method="GET">
-						<input class="col-md-8 form-control mr-1" type="text" placeholder="Buscar" id="pesquisa" name="pesquisa"/>
+						<input class="col-md-8 form-control mr-1" type="text" placeholder="Buscar" name="pesquisa"/>
 						<input class="col-md-3 btn btn-info" type="submit" value="Buscar" />
 					</form>
 				</div>
