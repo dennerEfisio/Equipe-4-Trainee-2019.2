@@ -1,4 +1,5 @@
 
+</div>
 <div class="base-home">
 			
 		<div class="row">

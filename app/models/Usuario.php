@@ -98,7 +98,7 @@ class Usuario extends Model{
         $qry->execute();
         
         if($qry->rowCount()>0){
-            $resultado=$qry->fetch(\PDO::FETCH_OBJ);
+            $resultado=$qry->fetch(\PDO::FETCH_ASSOC);
         }else{
             $resultado=0;
         }

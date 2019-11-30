@@ -24,8 +24,8 @@ class AdministradorController extends Controller
          
         if($dados["usuarios"] !=0){
             @session_start();
-              $_SESSION['status'] = "logado";
-	          $_SESSION['login'] = $login;
+              $_SESSION['status'] ="logado";
+	          $_SESSION['login'] = true;
 	          $_SESSION['senha'] =$senha;
               header("Location:".URL_BASE."administrador"); 
         }else{
