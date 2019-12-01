@@ -15,13 +15,19 @@
  <div id="portCarrossel" class="carousel slide col-sm-9" data-ride="carousel">
   <div class="carousel-inner">
    <div class="carousel-item active ">
-    <img class="portCarrosselImg" src="<?php echo URL_BASE."assets/img/imgCar.png";?> " alt="First slide">
+    <img class="portCarrosselImg" src="<?php echo URL_BASE."assets/img/htg1.png";?> " alt="Primeiro slide">
   </div>
   <div class="carousel-item">
-    <img class="portCarrosselImg" src="<?php echo URL_BASE."assets/img/imgCar2.png";?>" alt="Second slide">
+    <img class="portCarrosselImg" src="<?php echo URL_BASE."assets/img/htg5.jpg ";?>" alt="Segundo slide">
+    <div class="carousel-caption d-none d-md-block">
+    <p>Hmmm...Micalatéia ( ͡° ͜ʖ ͡°)...</p>
+  </div>
   </div>
   <div class="carousel-item">
-    <img class="portCarrosselImg" src="<?php echo URL_BASE."assets/img/imgCar3.png";?>" alt="Third slide">
+    <img class="portCarrosselImg" src="<?php echo URL_BASE."assets/img/htg2.jpg";?>" alt="Terceiro slide">
+  </div>
+  <div class="carousel-item">
+    <img class="portCarrosselImg" src="<?php echo URL_BASE."assets/img/htg3.jpg";?>" alt="Quarto slide">
   </div>
 </div>
 <a class="carousel-control-prev" href="#portCarrossel" role="button" data-slide="prev">
@@ -40,7 +46,7 @@
 <!-- -------------------------------------Div Pesquisa--------------------------------------------------------------------- -->
 <div class="portPesquisa row">
  <div class="col-sm-4">
-  <form class="form-inline my-2 my-lg-0">
+  <form class="form-inline my-2 my-lg-0" action="<?php echo URL_BASE."portfolio/buscar"; ?>" method="GET">
    <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar..." name="pesquisa">
    <input class="col-md-3 btn btn-info btn portPesquisaBotao" type="submit" value="Buscar" />
   </form>
