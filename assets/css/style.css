@@ -228,11 +228,11 @@
 @keyframes texto-parallax {
     0% {
         opacity: 0;
-        transform: translate(100px, 0px);
+        
     }
     100% {
         opacity: 1;
-        transform: translate(0px, 0px);
+        
     }
 }
 
@@ -249,9 +249,13 @@
 
 .contatoBotao {
     text-align: center !important;
-    background: transparent;
+    background: transparent !important;
     border: none !important;
     color: white;
+}
+
+.contatoBotao:hover{
+    color: #F6AE2D;
 }
 
 .contatoBotao:focus {
@@ -331,16 +335,15 @@
     height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #1d434e;
     color: white;
     padding-top: 1%;
-    position: relative;
 
 }
 
 .redes {
-    margin-right: 5%;
+    
 }
 
 .redes li {
@@ -348,7 +351,7 @@
 }
 
 .copyright {
-    margin-left: 5%;
+    
 }
 .alinhamento{
     display:flex;
@@ -419,6 +422,7 @@
     display: block;
     width: 100%;
     height: auto;
+    filter: grayscale(100%);
 }
 
 .container-fotos {
@@ -686,7 +690,7 @@
 
 .tituloSis{
 	text-align: center;
-		margin-top:2%;
+	margin-top:2%;
 }
 .linhacb{
 	text-align: center;
@@ -738,4 +742,51 @@
         float:none;
     }
 }
+.cardback-group{
+    display:flex;
+    flex-direction: row;
+}
+.cardback{
+    background:white;
+    
+}
+.cardback a{
+    text-decoration: none;
+    color:black;
+    transition: 0.2s;
+}
 
+.cardback a:hover{
+    background:#F6AE2D;
+    color:white;
+}
+
+.buscarCrud{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media(max-width:1000px)
+{
+    .cardback-group{
+        display:flex;
+        flex-direction: column;
+    }
+    .buscarCrud{
+        display:flex;
+        flex-direction: column;
+    }
+    .buscarCrud div{
+        margin-top:3px;
+        margin-bottom:3px;
+    }
+    
+    
+}
+
+
+.tituloMapa{
+    display:flex;
+    justify-content: center;
+}

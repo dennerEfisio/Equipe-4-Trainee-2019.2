@@ -15,7 +15,7 @@
             <p class="card-text"><strong>Anotações:</strong><?php echo "  ".$local->anotacoes ; ?></p>
         </div>
         <div class="card-footer">
-            <a href="<?php echo URL_BASE."local/editar/".$local->id; ?>" class="btn btn-secondary">Editar</a>
+            <a href="<?php echo URL_BASE."local/editar/".$local->id; ?>" class="btn btn-info">Editar</a>
             <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#excluirLocal" >Excluir</button>
                 <div class="modal fade" id="excluirLocal" role="dialog">
                     <div class="modal-dialog modal-dialog-centered">
@@ -28,7 +28,7 @@
                                 <div  class="mt-2 mb-2">
                                     <p>Realmente deseja excluir esse local permanentemente?</p>
                                 </div>
-                                <a href="<?php echo URL_BASE."local" ; ?>" class="btn btn-secondary">Cancelar</a>
+                                <a href="<?php echo URL_BASE."local" ; ?>" class="btn btn-info">Cancelar</a>
                                 <a href="<?php echo URL_BASE."local/excluir/".$local->id; ?>" class="btn btn-danger" type="submit">Excluir</a>
                             </div>
                         </div>
@@ -37,5 +37,5 @@
         </div>
     </div>
     </br>
-    <a href="<?php echo URL_BASE."local" ; ?>" class="btn btn-secondary" >Voltar</a>
+    <a href="<?php echo URL_BASE."local" ; ?>" class="btn btn-info" >Voltar</a>
 </div>

@@ -18,8 +18,8 @@
                 </div>
             </div>
 
-            <button class="btn btn-secondary" type="submit">Adicionar</button>
+            <button class="btn btn-info" type="submit">Adicionar</button>
         </div>
     </form>
-    <a href="<?php echo URL_BASE . "categoria"; ?>" class="btn btn-secondary">Voltar</a>
+    <a href="<?php echo URL_BASE . "categoria"; ?>" class="btn btn-info">Voltar</a>
 </div>

@@ -18,8 +18,8 @@
                 </div>
             </div>
             <input type="hidden" name="id" value="<?php echo $categoria->id; ?>">
-            <button class="btn btn-secondary" type="submit">Salvar</button>
+            <button class="btn btn-info" type="submit">Salvar</button>
         </div>
     </form>
-    <a href="<?php echo URL_BASE . "categoria/mostrar/".$categoria->id ; ?>" class="btn btn-secondary">Voltar</a>
+    <a href="<?php echo URL_BASE . "categoria/mostrar/".$categoria->id ; ?>" class="btn btn-info">Voltar</a>
 </div>

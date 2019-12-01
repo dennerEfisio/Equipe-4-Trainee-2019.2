@@ -3,8 +3,8 @@
 
 <div class="container mt-5 mb-5">
     <h2><strong>Menu de Alterações</strong></h2>
-    <div class="row">
-        <div class="col-3 mt-5">
+    <div class="cardback-group">
+        
             <div class="card cardback">
                 <a href="<?php echo URL_BASE . "espetaculo"; ?>">
                     <img class="card-img" src="<?php echo URL_BASE . "assets/img/espetaculos.png "; ?>">
@@ -13,8 +13,7 @@
                     </div>
                 </a>
             </div>
-        </div>
-        <div class="col-3 mt-5">
+        
 
             <div class="card cardback">
                 <a href="<?php echo URL_BASE . "usuario"; ?>">
@@ -27,9 +26,7 @@
 
             </div>
 
-        </div>
-
-        <div class="col-3 mt-5">
+        
             <div class="card cardback">
                 <a href="<?php echo URL_BASE . "local"; ?>">
                     <img class="card-img" src="<?php echo URL_BASE . "assets/img/local.png "; ?>">
@@ -38,8 +35,7 @@
                     </div>
                 </a>
             </div>
-        </div>
-        <div class="col-3 mt-5">
+        
             <div class="card cardback">
                 <a href="<?php echo URL_BASE . "categoria"; ?>">
                     <img class="card-img " src="<?php echo URL_BASE . "assets/img/categoria.png "; ?>" >
@@ -48,7 +44,7 @@
                     </div>
                 </a>
             </div>
-        </div>
+        
     </div>
     <br/>
     

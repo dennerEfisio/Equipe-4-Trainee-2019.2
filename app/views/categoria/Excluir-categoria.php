@@ -17,8 +17,8 @@
                 </div>
             </div>
             <input type="hidden" name="id" value="<?php echo $categoria->id; ?>">
-            <a href="<?php echo URL_BASE . "categoria/excluir/".$categoria->id ; ?>" class="btn btn-secondary" type="submit">Excluir</a>
+            <a href="<?php echo URL_BASE . "categoria/excluir/".$categoria->id ; ?>" class="btn btn-info" type="submit">Excluir</a>
         </div>
     </form>
-    <a href="<?php echo URL_BASE . "categoria"; ?>" class="btn btn-secondary">Voltar</a>
+    <a href="<?php echo URL_BASE . "categoria"; ?>" class="btn btn-info">Voltar</a>
 </div>

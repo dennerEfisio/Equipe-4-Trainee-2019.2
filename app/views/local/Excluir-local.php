@@ -58,7 +58,7 @@
                 <input type="hidden" name="id" value="<?php echo $local->id; ?>">
 
                 <br />
-                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#excluirLocal" >teste</button>
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#excluirLocal" >teste</button>
                 <div class="modal fade" id="excluirLocal" role="dialog">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
@@ -68,8 +68,8 @@
                             </div>
                             <div class="modal-body">
 
-                                <a href="<?php echo URL_BASE."local" ; ?>" class="btn btn-secondary">Cancelar</a>
-                                <a href="<?php echo URL_BASE."local/excluir/".$local->id; ?>" class="btn btn-secondary" type="submit">Excluir</a>
+                                <a href="<?php echo URL_BASE."local" ; ?>" class="btn btn-info">Cancelar</a>
+                                <a href="<?php echo URL_BASE."local/excluir/".$local->id; ?>" class="btn btn-danger" type="submit">Excluir</a>
                             </div>
                         </div>
                     </div>
@@ -78,7 +78,7 @@
 
             </div>
         </form>
-        <a href="<?php echo URL_BASE."local" ; ?>" class="btn btn-secondary">Voltar</a>
+        <a href="<?php echo URL_BASE."local" ; ?>" class="btn btn-info">Voltar</a>
 
     </div>
     

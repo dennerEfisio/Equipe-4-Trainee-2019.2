@@ -98,7 +98,7 @@
     <div class="parallax1" id="parallax2">
         <div class="conteudo" id="conteudo2">
             <h1 id="titulo2"><strong>
-            Uma viagem pelo mundo da dramaturgia
+            Uma viagem pelo mundo do teatro
             </strong></h1>
             <p id="texto2">
             Aqui toda estrutura é feita para que os espectadores possuam a melhor experiência teatral possível

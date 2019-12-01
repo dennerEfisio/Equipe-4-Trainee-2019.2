@@ -1,5 +1,4 @@
 
-
 <body class="portBody">
 
 <div class="container portCarrossel">
@@ -7,7 +6,7 @@
    <div class="col-sm-3 portCarrosselLado">
     <div class="portCarrosselTexto">
      <h2>Destaque:</h2>
-     <h3>Nome da Peça</h3>
+     <h3>Hermanoteu na Terra de Godah</h3>
    </div>
    <button type="button" class="btn portCarrosselBotao" data-toggle="modal" data-target="#portModal">Saiba
    Mais</button>
@@ -55,7 +54,7 @@
 
 <!-- ------------------------------------Div Cards---------------------------------------------------------------------------- -->
 
-<div class="portVariosCards row">
+<div class="portVariosCards row mb-0 pb-3">
   <?php foreach($espetaculos as $espetaculo){ ?>
 		<div class="portCard col-sm-4">
       <div class="portSpan">
@@ -88,8 +87,8 @@
 
 
     <?php } ?>
+  </div>
 </div>
 
 
-</body>
 
