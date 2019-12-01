@@ -6,7 +6,7 @@
     <div class="row">
         <div class="col-3 mt-5">
             <div class="card cardback">
-                <a href="#">
+                <a href="<?php echo URL_BASE . "espetaculo"; ?>">
                     <img class="card-img" src="<?php echo URL_BASE . "assets/img/espetaculos.png "; ?>">
                     <div class="card-body d-flex justify-content-center">
                         <h4><strong>Espetáculos</strong></h4>
@@ -17,7 +17,7 @@
         <div class="col-3 mt-5">
 
             <div class="card cardback">
-                <a href="#">
+                <a href="<?php echo URL_BASE . "usuario"; ?>">
                     <img class="card-img" src="<?php echo URL_BASE . "assets/img/usuario.png "; ?>">
                     <div class="card-body d-flex justify-content-center">
 

@@ -1,4 +1,4 @@
-    <div class="parallax1">
+<div class="parallax1">
         <nav class="navbar navbar-expand-xl navbar-dark navbar-color">
             <a class="navbar-brand" href="#">
                 <img src="<?php echo URL_BASE."assets/img/Felipe_Pecas.png" ?>" width="200">
@@ -46,14 +46,14 @@
                                     <hr>
                                 </div>
                                 <div class="modal-body">
-                                    <form action="<?php echo URL_BASE."administrador"; ?>" method="post">
+                                    <form action="<?php echo URL_BASE."administrador/logar"; ?>" method="GET">
                                         <div class="form-group">
                                             <label for="email">Email:</label>
-                                            <input type="text" class="form-control" id="email" required>
+                                            <input type="text" class="form-control" name="login_email" required>
                                         </div>
                                         <div class="form-group">
                                             <label for="senha">Senha:</label>
-                                            <input type="password" class="form-control" id="senha" required>
+                                            <input type="password" class="form-control" name="login_senha" required>
                                         </div>
                                         <div class="botao" tabindex="0">
                                             <button type="submit" class="btn btn-primary botaoModal">Login</button>
@@ -77,22 +77,22 @@
                             <hr>
                         </div>
                         <div class="modal-body">
-                            <form action="<?php echo URL_BASE."contato"; ?>" method="POST">
+                            <form action="<?php echo URL_BASE; ?>" method="POST">
                                 <div class="form-group">
                                     <label for="nome">Nome:</label>
-                                    <input type="text" class="form-control inputContModal" id="nome" placeholder="Nome Completo" name="nome" required>
+                                    <input type="text" class="form-control inputContModal" id="nome" placeholder="Nome Completo" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Email:</label>
-                                    <input type="email" class="form-control inputContModal" id="email" placeholder="nome@exemplo.com" name="email" required>
+                                    <input type="email" class="form-control inputContModal" id="email" placeholder="nome@exemplo.com" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="telefone">Telefone:</label>
-                                    <input type="text" class="form-control inputContModal" id="telefone" placeholder="(00) 00000-0000" name="telefone" required>
+                                    <input type="text" class="form-control inputContModal" id="telefone" placeholder="(00) 00000-0000" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="mensagem">Mensagem:</label>
-                                    <textarea class="form-control inputContModal" id="mensagem" rows="3" name="mensagem" required></textarea>
+                                    <textarea class="form-control inputContModal" id="mensagem" rows="3" required></textarea>
                                 </div>
 
                                 <div class="botoesContModal" tabindex="0">

@@ -5,9 +5,9 @@
 <head>
     <title>Felipe Peças</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="<?php echo URL_BASE."assets/css/bootstrap.css";?> ">
     <link rel="stylesheet" type="text/css" href="<?php echo URL_BASE."assets/css/style.css";?>">
-    <link rel="stylesheet" type="text/css" href="<?php echo URL_BASE."assets/css/styles.css";?>">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,400&display=swap" rel="stylesheet">
     <link rel="icon" href="<?php echo URL_BASE."assets/img/favicon.ico"?>" />
     <style>
