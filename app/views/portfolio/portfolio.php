@@ -53,7 +53,7 @@
   <?php foreach($espetaculos as $espetaculo){ ?>
 		<div class="portCard col-sm-4">
       <div class="portSpan">
-        <img src="<?php echo $espetaculo->url_imagem?>" alt="Peça de teatro" class="portCardImg">
+        <img src="<?php echo URL_BASE."assets/img/".$espetaculo->url_imagem?>" alt="Peça de teatro" class="portCardImg">
         <div class="portCardNomePeca"><?php echo $espetaculo->nome?></div>
         <button type="button" class="portCardBotao btn" data-toggle="modal" data-target="#portModal<?php echo $espetaculo->id?>">Saiba Mais</button>
       </div>
